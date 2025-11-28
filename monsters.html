@@ -1,0 +1,4743 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html lang="en" xml:lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="generator"
+content="HTML Tidy for Windows (vers 1st May 2002 [Terry's build]), see www.w3.org" />
+<meta http-equiv="Content-Type"
+content="text/html; charset=utf-8" />
+<meta http-equiv="Content-Style-Type" content="text/css" />
+<title>NetHack Monsters Properties, Attacks spoiler</title>
+<link rel="StyleSheet" href="../nh2.css" type="text/css"
+media="screen, foo" />
+<link rel="StyleSheet" href="../nh2ns.css" type="text/css"
+media="screen" />
+</head>
+<body>
+<h1>Monsters and their basic properties and attacks in NetHack
+3.4</h1>
+
+<p>mon1-343.html  Last edited 2003-12-17 for NetHack 3.4.3
+<br />
+Compiled for 3.2.2 by Kevin Hugo.
+<br />
+Updated for 3.4.3 by Dylan O'Donnell &lt;<a
+href="mailto:psmith@spod-central.org">psmith@spod-central.org</a>&gt;.
+<br />
+ HTML Conversion by Kate Nepveu &lt;<a
+href="mailto:knepveu@steelypips.org">knepveu@steelypips.org</a>&gt;; HTML re-synchronized 2005-08-29 by <a href="mailto:dfabulich@warpmail.net">Dan Fabulich</a>.</p>
+
+<h2>Contents: Monster table</h2>
+
+<table border="1" cellpadding="7" summary="The Big Monster Table">
+<tr>
+<th align="left" colspan="2">SPECIES</th>
+<th><a href="#lev">LEV</a></th>
+<th><a href="#spd">SPD</a></th>
+<th><a href="#ac">AC</a></th>
+<th><a href="#mr">MR</a></th>
+<th><a href="#resists">RESISTS</a></th>
+<th align="left"><a href="#attacks">ATTACKS</a></th>
+</tr>
+
+<tr>
+<td>a</td>
+<td align="right">giant ant</td>
+<td align="right">2</td>
+<td align="right">18</td>
+<td align="right">3</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>1d4</td>
+</tr>
+
+<tr>
+<td>a</td>
+<td align="right">killer bee</td>
+<td align="right">1</td>
+<td align="right">18</td>
+<td align="right">-1</td>
+<td align="right">0</td>
+<td>P</td>
+<td>1d3P</td>
+</tr>
+
+<tr>
+<td>a</td>
+<td align="right">soldier ant</td>
+<td align="right">3</td>
+<td align="right">18</td>
+<td align="right">3</td>
+<td align="right">0</td>
+<td>P</td>
+<td>2d4 3d4P</td>
+</tr>
+
+<tr>
+<td>a</td>
+<td align="right">fire ant</td>
+<td align="right">3</td>
+<td align="right">18</td>
+<td align="right">3</td>
+<td align="right">10</td>
+<td>F</td>
+<td>2d4 2d4F</td>
+</tr>
+
+<tr>
+<td>a</td>
+<td align="right">giant beetle</td>
+<td align="right">5</td>
+<td align="right">6</td>
+<td align="right">4</td>
+<td align="right">0</td>
+<td>P</td>
+<td>3d6</td>
+</tr>
+
+<tr>
+<td>a</td>
+<td align="right">queen bee</td>
+<td align="right">9</td>
+<td align="right">24</td>
+<td align="right">-4</td>
+<td align="right">0</td>
+<td>P</td>
+<td>1d8P</td>
+</tr>
+
+<tr>
+<td>b</td>
+<td align="right">acid blob</td>
+<td align="right">1</td>
+<td align="right">3</td>
+<td align="right">8</td>
+<td align="right">0</td>
+<td>spa*</td>
+<td>(1d8A)</td>
+</tr>
+
+<tr>
+<td>b</td>
+<td align="right">quivering blob</td>
+<td align="right">5</td>
+<td align="right">1</td>
+<td align="right">8</td>
+<td align="right">0</td>
+<td>sP</td>
+<td>1d8</td>
+</tr>
+
+<tr>
+<td>b</td>
+<td align="right">gelatinous cube</td>
+<td align="right">6</td>
+<td align="right">6</td>
+<td align="right">8</td>
+<td align="right">0</td>
+<td>FCSEpa*</td>
+<td>2d4. (1d4.)</td>
+</tr>
+
+<tr>
+<th align="left" colspan="2">SPECIES</th>
+<th><a href="#lev">LEV</a></th>
+<th><a href="#spd">SPD</a></th>
+<th><a href="#ac">AC</a></th>
+<th><a href="#mr">MR</a></th>
+<th><a href="#resists">RESISTS</a></th>
+<th align="left"><a href="#attacks">ATTACKS</a></th>
+</tr>
+
+<tr>
+<td>c</td>
+<td align="right">chickatrice</td>
+<td align="right">4</td>
+<td align="right">4</td>
+<td align="right">8</td>
+<td align="right">30</td>
+<td>P*</td>
+<td>1d2 0d0* (0d0*)</td>
+</tr>
+
+<tr>
+<td>c</td>
+<td align="right">cockatrice</td>
+<td align="right">5</td>
+<td align="right">6</td>
+<td align="right">6</td>
+<td align="right">30</td>
+<td>P*</td>
+<td>1d3 0d0* (0d0*)</td>
+</tr>
+
+<tr>
+<td>c</td>
+<td align="right">pyrolisk</td>
+<td align="right">6</td>
+<td align="right">6</td>
+<td align="right">6</td>
+<td align="right">30</td>
+<td>FP</td>
+<td>G2d6F</td>
+</tr>
+
+<tr>
+<td>d</td>
+<td align="right">jackal</td>
+<td align="right">0</td>
+<td align="right">12</td>
+<td align="right">7</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>1d2</td>
+</tr>
+
+<tr>
+<td>d</td>
+<td align="right">fox</td>
+<td align="right">0</td>
+<td align="right">15</td>
+<td align="right">7</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>1d3</td>
+</tr>
+
+<tr>
+<td>d</td>
+<td align="right">coyote</td>
+<td align="right">1</td>
+<td align="right">12</td>
+<td align="right">7</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>1d4</td>
+</tr>
+
+<tr>
+<td>d</td>
+<td align="right">werejackal</td>
+<td align="right">2</td>
+<td align="right">12</td>
+<td align="right">7</td>
+<td align="right">10</td>
+<td>p</td>
+<td>1d4@</td>
+</tr>
+
+<tr>
+<td>d</td>
+<td align="right">little dog</td>
+<td align="right">2</td>
+<td align="right">18</td>
+<td align="right">6</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>1d6</td>
+</tr>
+
+<tr>
+<td>d</td>
+<td align="right">dog</td>
+<td align="right">4</td>
+<td align="right">16</td>
+<td align="right">5</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>1d6</td>
+</tr>
+
+<tr>
+<td>d</td>
+<td align="right">large dog</td>
+<td align="right">6</td>
+<td align="right">15</td>
+<td align="right">4</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>2d4</td>
+</tr>
+
+<tr>
+<td>d</td>
+<td align="right">dingo</td>
+<td align="right">4</td>
+<td align="right">16</td>
+<td align="right">5</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>1d6</td>
+</tr>
+
+<tr>
+<td>d</td>
+<td align="right">wolf</td>
+<td align="right">5</td>
+<td align="right">12</td>
+<td align="right">4</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>2d4</td>
+</tr>
+
+<tr>
+<td>d</td>
+<td align="right">werewolf</td>
+<td align="right">5</td>
+<td align="right">12</td>
+<td align="right">4</td>
+<td align="right">20</td>
+<td>p</td>
+<td>2d6@</td>
+</tr>
+
+<tr>
+<td>d</td>
+<td align="right">warg</td>
+<td align="right">7</td>
+<td align="right">12</td>
+<td align="right">4</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>2d6</td>
+</tr>
+
+<tr>
+<td>d</td>
+<td align="right">winter wolf cub</td>
+<td align="right">5</td>
+<td align="right">12</td>
+<td align="right">4</td>
+<td align="right">0</td>
+<td>C</td>
+<td>1d8 B1d8C</td>
+</tr>
+
+<tr>
+<td>d</td>
+<td align="right">winter wolf</td>
+<td align="right">7</td>
+<td align="right">12</td>
+<td align="right">4</td>
+<td align="right">20</td>
+<td>C</td>
+<td>2d6 B2d6C</td>
+</tr>
+
+<tr>
+<td>d</td>
+<td align="right">hell hound pup</td>
+<td align="right">7</td>
+<td align="right">12</td>
+<td align="right">4</td>
+<td align="right">20</td>
+<td>F</td>
+<td>2d6 B2d6F</td>
+</tr>
+
+<tr>
+<td>d</td>
+<td align="right">hell hound</td>
+<td align="right">12</td>
+<td align="right">14</td>
+<td align="right">2</td>
+<td align="right">20</td>
+<td>F</td>
+<td>3d6 B3d6F</td>
+</tr>
+
+<tr>
+<th align="left" colspan="2">SPECIES</th>
+<th><a href="#lev">LEV</a></th>
+<th><a href="#spd">SPD</a></th>
+<th><a href="#ac">AC</a></th>
+<th><a href="#mr">MR</a></th>
+<th><a href="#resists">RESISTS</a></th>
+<th align="left"><a href="#attacks">ATTACKS</a></th>
+</tr>
+
+<tr>
+<td>e</td>
+<td align="right">gas spore</td>
+<td align="right">1</td>
+<td align="right">3</td>
+<td align="right">10</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>[X4d6]</td>
+</tr>
+
+<tr>
+<td>e</td>
+<td align="right">floating eye</td>
+<td align="right">2</td>
+<td align="right">1</td>
+<td align="right">9</td>
+<td align="right">10</td>
+<td>&#160;</td>
+<td>(0d70.)</td>
+</tr>
+
+<tr>
+<td>e</td>
+<td align="right">freezing sphere</td>
+<td align="right">6</td>
+<td align="right">13</td>
+<td align="right">4</td>
+<td align="right">0</td>
+<td>C</td>
+<td>X4d6C</td>
+</tr>
+
+<tr>
+<td>e</td>
+<td align="right">flaming sphere</td>
+<td align="right">6</td>
+<td align="right">13</td>
+<td align="right">4</td>
+<td align="right">0</td>
+<td>F</td>
+<td>X4d6F</td>
+</tr>
+
+<tr>
+<td>e</td>
+<td align="right">shocking sphere</td>
+<td align="right">6</td>
+<td align="right">13</td>
+<td align="right">4</td>
+<td align="right">0</td>
+<td>E</td>
+<td>X4d6E</td>
+</tr>
+
+<tr>
+<td>f</td>
+<td align="right">kitten</td>
+<td align="right">2</td>
+<td align="right">18</td>
+<td align="right">6</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>1d6</td>
+</tr>
+
+<tr>
+<td>f</td>
+<td align="right">housecat</td>
+<td align="right">4</td>
+<td align="right">16</td>
+<td align="right">5</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>1d6</td>
+</tr>
+
+<tr>
+<td>f</td>
+<td align="right">jaguar</td>
+<td align="right">4</td>
+<td align="right">15</td>
+<td align="right">6</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>1d4 1d4 1d8</td>
+</tr>
+
+<tr>
+<td>f</td>
+<td align="right">lynx</td>
+<td align="right">5</td>
+<td align="right">15</td>
+<td align="right">6</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>1d4 1d4 1d10</td>
+</tr>
+
+<tr>
+<td>f</td>
+<td align="right">panther</td>
+<td align="right">5</td>
+<td align="right">15</td>
+<td align="right">6</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>1d6 1d6 1d10</td>
+</tr>
+
+<tr>
+<td>f</td>
+<td align="right">large cat</td>
+<td align="right">6</td>
+<td align="right">15</td>
+<td align="right">4</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>2d4</td>
+</tr>
+
+<tr>
+<td>f</td>
+<td align="right">tiger</td>
+<td align="right">6</td>
+<td align="right">12</td>
+<td align="right">6</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>2d4 2d4 1d10</td>
+</tr>
+
+<tr>
+<th align="left" colspan="2">SPECIES</th>
+<th><a href="#lev">LEV</a></th>
+<th><a href="#spd">SPD</a></th>
+<th><a href="#ac">AC</a></th>
+<th><a href="#mr">MR</a></th>
+<th><a href="#resists">RESISTS</a></th>
+<th align="left"><a href="#attacks">ATTACKS</a></th>
+</tr>
+
+<tr>
+<td>g</td>
+<td align="right">gremlin</td>
+<td align="right">5</td>
+<td align="right">12</td>
+<td align="right">2</td>
+<td align="right">25</td>
+<td>P</td>
+<td>1d6 1d6 1d4 0d0i</td>
+</tr>
+
+<tr>
+<td>g</td>
+<td align="right">gargoyle</td>
+<td align="right">6</td>
+<td align="right">10</td>
+<td align="right">-4</td>
+<td align="right">0</td>
+<td>*</td>
+<td>2d6 2d6 2d4</td>
+</tr>
+
+<tr>
+<td>g</td>
+<td align="right">winged gargoyle</td>
+<td align="right">9</td>
+<td align="right">15</td>
+<td align="right">-2</td>
+<td align="right">0</td>
+<td>*</td>
+<td>3d6 3d6 3d4</td>
+</tr>
+
+<tr>
+<td>h</td>
+<td align="right">hobbit</td>
+<td align="right">1</td>
+<td align="right">9</td>
+<td align="right">10</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>W1d6</td>
+</tr>
+
+<tr>
+<td>h</td>
+<td align="right">dwarf</td>
+<td align="right">2</td>
+<td align="right">6</td>
+<td align="right">10</td>
+<td align="right">10</td>
+<td>&#160;</td>
+<td>W1d8</td>
+</tr>
+
+<tr>
+<td>h</td>
+<td align="right">bugbear</td>
+<td align="right">3</td>
+<td align="right">9</td>
+<td align="right">5</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>W2d4</td>
+</tr>
+
+<tr>
+<td>h</td>
+<td align="right">dwarf lord</td>
+<td align="right">4</td>
+<td align="right">6</td>
+<td align="right">10</td>
+<td align="right">10</td>
+<td>&#160;</td>
+<td>W2d4 W2d4</td>
+</tr>
+
+<tr>
+<td>h</td>
+<td align="right">dwarf king</td>
+<td align="right">6</td>
+<td align="right">6</td>
+<td align="right">10</td>
+<td align="right">20</td>
+<td>&#160;</td>
+<td>W2d6 W2d6</td>
+</tr>
+
+<tr>
+<td>h</td>
+<td align="right">mind flayer</td>
+<td align="right">9</td>
+<td align="right">12</td>
+<td align="right">5</td>
+<td align="right">90</td>
+<td>&#160;</td>
+<td>W1d4 2!I 2!I 2!I</td>
+</tr>
+
+<tr>
+<td>h</td>
+<td align="right">master mind flayer</td>
+<td align="right">13</td>
+<td align="right">12</td>
+<td align="right">0</td>
+<td align="right">90</td>
+<td>&#160;</td>
+<td>W1d8 2!I 2!I 2!I 2!I 2!I</td>
+</tr>
+
+<tr>
+<td>i</td>
+<td align="right">manes</td>
+<td align="right">1</td>
+<td align="right">3</td>
+<td align="right">7</td>
+<td align="right">0</td>
+<td>sp</td>
+<td>1d3 1d3 1d4</td>
+</tr>
+
+<tr>
+<td>i</td>
+<td align="right">homunculus</td>
+<td align="right">2</td>
+<td align="right">12</td>
+<td align="right">6</td>
+<td align="right">10</td>
+<td>SP</td>
+<td>1d3S</td>
+</tr>
+
+<tr>
+<td>i</td>
+<td align="right">imp</td>
+<td align="right">3</td>
+<td align="right">12</td>
+<td align="right">2</td>
+<td align="right">20</td>
+<td>&#160;</td>
+<td>1d4</td>
+</tr>
+
+<tr>
+<td>i</td>
+<td align="right">lemure</td>
+<td align="right">3</td>
+<td align="right">3</td>
+<td align="right">7</td>
+<td align="right">0</td>
+<td>Sp</td>
+<td>1d3</td>
+</tr>
+
+<tr>
+<td>i</td>
+<td align="right">quasit</td>
+<td align="right">3</td>
+<td align="right">15</td>
+<td align="right">2</td>
+<td align="right">20</td>
+<td>P</td>
+<td>1d2!D 1d2!D 1d4</td>
+</tr>
+
+<tr>
+<td>i</td>
+<td align="right">tengu</td>
+<td align="right">6</td>
+<td align="right">13</td>
+<td align="right">5</td>
+<td align="right">30</td>
+<td>P</td>
+<td>1d7</td>
+</tr>
+
+<tr>
+<th align="left" colspan="2">SPECIES</th>
+<th><a href="#lev">LEV</a></th>
+<th><a href="#spd">SPD</a></th>
+<th><a href="#ac">AC</a></th>
+<th><a href="#mr">MR</a></th>
+<th><a href="#resists">RESISTS</a></th>
+<th align="left"><a href="#attacks">ATTACKS</a></th>
+</tr>
+
+<tr>
+<td>j</td>
+<td align="right">blue jelly</td>
+<td align="right">4</td>
+<td align="right">0</td>
+<td align="right">8</td>
+<td align="right">10</td>
+<td>CP</td>
+<td>(0d6C)</td>
+</tr>
+
+<tr>
+<td>j</td>
+<td align="right">spotted jelly</td>
+<td align="right">5</td>
+<td align="right">0</td>
+<td align="right">8</td>
+<td align="right">10</td>
+<td>a*</td>
+<td>(0d6A)</td>
+</tr>
+
+<tr>
+<td>j</td>
+<td align="right">ochre jelly</td>
+<td align="right">6</td>
+<td align="right">3</td>
+<td align="right">8</td>
+<td align="right">20</td>
+<td>a*</td>
+<td>E3d6A (3d6A)</td>
+</tr>
+
+<tr>
+<td>k</td>
+<td align="right">kobold</td>
+<td align="right">0</td>
+<td align="right">6</td>
+<td align="right">10</td>
+<td align="right">0</td>
+<td>p</td>
+<td>W1d4</td>
+</tr>
+
+<tr>
+<td>k</td>
+<td align="right">large kobold</td>
+<td align="right">1</td>
+<td align="right">6</td>
+<td align="right">10</td>
+<td align="right">0</td>
+<td>p</td>
+<td>W1d6</td>
+</tr>
+
+<tr>
+<td>k</td>
+<td align="right">kobold lord</td>
+<td align="right">2</td>
+<td align="right">6</td>
+<td align="right">10</td>
+<td align="right">0</td>
+<td>p</td>
+<td>W2d4</td>
+</tr>
+
+<tr>
+<td>k</td>
+<td align="right">kobold shaman</td>
+<td align="right">2</td>
+<td align="right">6</td>
+<td align="right">6</td>
+<td align="right">10</td>
+<td>p</td>
+<td>M0d0+</td>
+</tr>
+
+<tr>
+<td>l</td>
+<td align="right">leprechaun</td>
+<td align="right">5</td>
+<td align="right">15</td>
+<td align="right">8</td>
+<td align="right">20</td>
+<td>&#160;</td>
+<td>1d2$</td>
+</tr>
+
+<tr>
+<td>m</td>
+<td align="right">small mimic</td>
+<td align="right">7</td>
+<td align="right">3</td>
+<td align="right">7</td>
+<td align="right">0</td>
+<td>a</td>
+<td>3d4</td>
+</tr>
+
+<tr>
+<td>m</td>
+<td align="right">large mimic</td>
+<td align="right">8</td>
+<td align="right">3</td>
+<td align="right">7</td>
+<td align="right">10</td>
+<td>a</td>
+<td>3d4m</td>
+</tr>
+
+<tr>
+<td>m</td>
+<td align="right">giant mimic</td>
+<td align="right">9</td>
+<td align="right">3</td>
+<td align="right">7</td>
+<td align="right">20</td>
+<td>a</td>
+<td>3d6m 3d6m</td>
+</tr>
+
+<tr>
+<td>n</td>
+<td align="right">wood nymph</td>
+<td align="right">3</td>
+<td align="right">12</td>
+<td align="right">9</td>
+<td align="right">20</td>
+<td>&#160;</td>
+<td>0d0- 0d0-</td>
+</tr>
+
+<tr>
+<td>n</td>
+<td align="right">water nymph</td>
+<td align="right">3</td>
+<td align="right">12</td>
+<td align="right">9</td>
+<td align="right">20</td>
+<td>&#160;</td>
+<td>0d0- 0d0-</td>
+</tr>
+
+<tr>
+<td>n</td>
+<td align="right">mountain nymph</td>
+<td align="right">3</td>
+<td align="right">12</td>
+<td align="right">9</td>
+<td align="right">20</td>
+<td>&#160;</td>
+<td>0d0- 0d0-</td>
+</tr>
+
+<tr>
+<td>o</td>
+<td align="right">goblin</td>
+<td align="right">0</td>
+<td align="right">6</td>
+<td align="right">10</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>W1d4</td>
+</tr>
+
+<tr>
+<td>o</td>
+<td align="right">hobgoblin</td>
+<td align="right">1</td>
+<td align="right">9</td>
+<td align="right">10</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>W1d6</td>
+</tr>
+
+<tr>
+<td>o</td>
+<td align="right">orc</td>
+<td align="right">1</td>
+<td align="right">9</td>
+<td align="right">10</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>W1d8</td>
+</tr>
+
+<tr>
+<td>o</td>
+<td align="right">hill orc</td>
+<td align="right">2</td>
+<td align="right">9</td>
+<td align="right">10</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>W1d6</td>
+</tr>
+
+<tr>
+<td>o</td>
+<td align="right">Mordor orc</td>
+<td align="right">3</td>
+<td align="right">5</td>
+<td align="right">10</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>W1d6</td>
+</tr>
+
+<tr>
+<td>o</td>
+<td align="right">Uruk-hai</td>
+<td align="right">3</td>
+<td align="right">7</td>
+<td align="right">10</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>W1d8</td>
+</tr>
+
+<tr>
+<td>o</td>
+<td align="right">orc shaman</td>
+<td align="right">3</td>
+<td align="right">9</td>
+<td align="right">5</td>
+<td align="right">10</td>
+<td>&#160;</td>
+<td>M0d0+</td>
+</tr>
+
+<tr>
+<td>o</td>
+<td align="right">orc-captain</td>
+<td align="right">5</td>
+<td align="right">5</td>
+<td align="right">10</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>W2d4 W2d4</td>
+</tr>
+
+<tr>
+<th align="left" colspan="2">SPECIES</th>
+<th><a href="#lev">LEV</a></th>
+<th><a href="#spd">SPD</a></th>
+<th><a href="#ac">AC</a></th>
+<th><a href="#mr">MR</a></th>
+<th><a href="#resists">RESISTS</a></th>
+<th align="left"><a href="#attacks">ATTACKS</a></th>
+</tr>
+
+<tr>
+<td>p</td>
+<td align="right">rock piercer</td>
+<td align="right">3</td>
+<td align="right">1</td>
+<td align="right">3</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>2d6</td>
+</tr>
+
+<tr>
+<td>p</td>
+<td align="right">iron piercer</td>
+<td align="right">5</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>3d6</td>
+</tr>
+
+<tr>
+<td>p</td>
+<td align="right">glass piercer</td>
+<td align="right">7</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td>a</td>
+<td>4d6</td>
+</tr>
+
+<tr>
+<td>q</td>
+<td align="right">rothe</td>
+<td align="right">2</td>
+<td align="right">9</td>
+<td align="right">7</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>1d3 1d3 1d8</td>
+</tr>
+
+<tr>
+<td>q</td>
+<td align="right">mumak</td>
+<td align="right">5</td>
+<td align="right">9</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>4d12 2d6</td>
+</tr>
+
+<tr>
+<td>q</td>
+<td align="right">leocrotta</td>
+<td align="right">6</td>
+<td align="right">18</td>
+<td align="right">4</td>
+<td align="right">10</td>
+<td>&#160;</td>
+<td>2d6 2d6 2d6</td>
+</tr>
+
+<tr>
+<td>q</td>
+<td align="right">wumpus</td>
+<td align="right">8</td>
+<td align="right">3</td>
+<td align="right">2</td>
+<td align="right">10</td>
+<td>&#160;</td>
+<td>3d6</td>
+</tr>
+
+<tr>
+<td>q</td>
+<td align="right">titanothere</td>
+<td align="right">12</td>
+<td align="right">12</td>
+<td align="right">6</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>2d8</td>
+</tr>
+
+<tr>
+<td>q</td>
+<td align="right">baluchitherium</td>
+<td align="right">14</td>
+<td align="right">12</td>
+<td align="right">5</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>5d4 5d4</td>
+</tr>
+
+<tr>
+<td>q</td>
+<td align="right">mastodon</td>
+<td align="right">20</td>
+<td align="right">12</td>
+<td align="right">5</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>4d8 4d8</td>
+</tr>
+
+<tr>
+<td>r</td>
+<td align="right">sewer rat</td>
+<td align="right">0</td>
+<td align="right">12</td>
+<td align="right">7</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>1d3</td>
+</tr>
+
+<tr>
+<td>r</td>
+<td align="right">giant rat</td>
+<td align="right">1</td>
+<td align="right">10</td>
+<td align="right">7</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>1d3</td>
+</tr>
+
+<tr>
+<td>r</td>
+<td align="right">rabid rat</td>
+<td align="right">2</td>
+<td align="right">12</td>
+<td align="right">6</td>
+<td align="right">0</td>
+<td>p</td>
+<td>2d4!C</td>
+</tr>
+
+<tr>
+<td>r</td>
+<td align="right">wererat</td>
+<td align="right">2</td>
+<td align="right">12</td>
+<td align="right">6</td>
+<td align="right">10</td>
+<td>p</td>
+<td>1d4@</td>
+</tr>
+
+<tr>
+<td>r</td>
+<td align="right">rock mole</td>
+<td align="right">3</td>
+<td align="right">3</td>
+<td align="right">0</td>
+<td align="right">20</td>
+<td>&#160;</td>
+<td>1d6</td>
+</tr>
+
+<tr>
+<td>r</td>
+<td align="right">woodchuck</td>
+<td align="right">3</td>
+<td align="right">3</td>
+<td align="right">0</td>
+<td align="right">20</td>
+<td>&#160;</td>
+<td>1d6</td>
+</tr>
+
+<tr>
+<th align="left" colspan="2">SPECIES</th>
+<th><a href="#lev">LEV</a></th>
+<th><a href="#spd">SPD</a></th>
+<th><a href="#ac">AC</a></th>
+<th><a href="#mr">MR</a></th>
+<th><a href="#resists">RESISTS</a></th>
+<th align="left"><a href="#attacks">ATTACKS</a></th>
+</tr>
+
+<tr>
+<td>s</td>
+<td align="right">cave spider</td>
+<td align="right">1</td>
+<td align="right">12</td>
+<td align="right">3</td>
+<td align="right">0</td>
+<td>P</td>
+<td>1d2</td>
+</tr>
+
+<tr>
+<td>s</td>
+<td align="right">centipede</td>
+<td align="right">2</td>
+<td align="right">4</td>
+<td align="right">3</td>
+<td align="right">0</td>
+<td>P</td>
+<td>1d3P</td>
+</tr>
+
+<tr>
+<td>s</td>
+<td align="right">giant spider</td>
+<td align="right">5</td>
+<td align="right">15</td>
+<td align="right">4</td>
+<td align="right">0</td>
+<td>P</td>
+<td>2d4P</td>
+</tr>
+
+<tr>
+<td>s</td>
+<td align="right">scorpion</td>
+<td align="right">5</td>
+<td align="right">15</td>
+<td align="right">3</td>
+<td align="right">0</td>
+<td>P</td>
+<td>1d2 1d2 1d4P</td>
+</tr>
+
+<tr>
+<td>t</td>
+<td align="right">lurker above</td>
+<td align="right">10</td>
+<td align="right">3</td>
+<td align="right">3</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>E1d8d</td>
+</tr>
+
+<tr>
+<td>t</td>
+<td align="right">trapper</td>
+<td align="right">12</td>
+<td align="right">3</td>
+<td align="right">3</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>E1d10d</td>
+</tr>
+
+<tr>
+<td>u</td>
+<td align="right">white unicorn</td>
+<td align="right">4</td>
+<td align="right">24</td>
+<td align="right">2</td>
+<td align="right">70</td>
+<td>P</td>
+<td>1d12 1d6</td>
+</tr>
+
+<tr>
+<td>u</td>
+<td align="right">gray unicorn</td>
+<td align="right">4</td>
+<td align="right">24</td>
+<td align="right">2</td>
+<td align="right">70</td>
+<td>P</td>
+<td>1d12 1d6</td>
+</tr>
+
+<tr>
+<td>u</td>
+<td align="right">black unicorn</td>
+<td align="right">4</td>
+<td align="right">24</td>
+<td align="right">2</td>
+<td align="right">70</td>
+<td>P</td>
+<td>1d12 1d6</td>
+</tr>
+
+<tr>
+<td>u</td>
+<td align="right">pony</td>
+<td align="right">3</td>
+<td align="right">16</td>
+<td align="right">6</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>1d6 1d2</td>
+</tr>
+
+<tr>
+<td>u</td>
+<td align="right">horse</td>
+<td align="right">5</td>
+<td align="right">20</td>
+<td align="right">5</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>1d8 1d3</td>
+</tr>
+
+<tr>
+<td>u</td>
+<td align="right">warhorse</td>
+<td align="right">7</td>
+<td align="right">24</td>
+<td align="right">4</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>1d10 1d4</td>
+</tr>
+
+<tr>
+<td>v</td>
+<td align="right">fog cloud</td>
+<td align="right">3</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td>sp*</td>
+<td>E1d6</td>
+</tr>
+
+<tr>
+<td>v</td>
+<td align="right">dust vortex</td>
+<td align="right">4</td>
+<td align="right">20</td>
+<td align="right">2</td>
+<td align="right">30</td>
+<td>sp*</td>
+<td>E2d8b</td>
+</tr>
+
+<tr>
+<td>v</td>
+<td align="right">ice vortex</td>
+<td align="right">5</td>
+<td align="right">20</td>
+<td align="right">2</td>
+<td align="right">30</td>
+<td>csp*</td>
+<td>E1d6C</td>
+</tr>
+
+<tr>
+<td>v</td>
+<td align="right">energy vortex</td>
+<td align="right">6</td>
+<td align="right">20</td>
+<td align="right">2</td>
+<td align="right">30</td>
+<td>sdep*</td>
+<td>E1d6E E0d0e (0d4E)</td>
+</tr>
+
+<tr>
+<td>v</td>
+<td align="right">steam vortex</td>
+<td align="right">7</td>
+<td align="right">22</td>
+<td align="right">2</td>
+<td align="right">30</td>
+<td>fsp*</td>
+<td>E1d8F</td>
+</tr>
+
+<tr>
+<td>v</td>
+<td align="right">fire vortex</td>
+<td align="right">8</td>
+<td align="right">22</td>
+<td align="right">2</td>
+<td align="right">30</td>
+<td>fsp*</td>
+<td>E1d10F (0d4F)</td>
+</tr>
+
+<tr>
+<th align="left" colspan="2">SPECIES</th>
+<th><a href="#lev">LEV</a></th>
+<th><a href="#spd">SPD</a></th>
+<th><a href="#ac">AC</a></th>
+<th><a href="#mr">MR</a></th>
+<th><a href="#resists">RESISTS</a></th>
+<th align="left"><a href="#attacks">ATTACKS</a></th>
+</tr>
+
+<tr>
+<td>w</td>
+<td align="right">baby long worm</td>
+<td align="right">8</td>
+<td align="right">3</td>
+<td align="right">5</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>1d6</td>
+</tr>
+
+<tr>
+<td>w</td>
+<td align="right">baby purple worm</td>
+<td align="right">8</td>
+<td align="right">3</td>
+<td align="right">5</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>1d6</td>
+</tr>
+
+<tr>
+<td>w</td>
+<td align="right">long worm</td>
+<td align="right">8</td>
+<td align="right">3</td>
+<td align="right">5</td>
+<td align="right">10</td>
+<td>&#160;</td>
+<td>1d4</td>
+</tr>
+
+<tr>
+<td>w</td>
+<td align="right">purple worm</td>
+<td align="right">15</td>
+<td align="right">9</td>
+<td align="right">6</td>
+<td align="right">20</td>
+<td>&#160;</td>
+<td>2d8 E1d10d</td>
+</tr>
+
+<tr>
+<td>x</td>
+<td align="right">grid bug</td>
+<td align="right">0</td>
+<td align="right">12</td>
+<td align="right">9</td>
+<td align="right">0</td>
+<td>ep</td>
+<td>1d1E</td>
+</tr>
+
+<tr>
+<td>x</td>
+<td align="right">xan</td>
+<td align="right">7</td>
+<td align="right">18</td>
+<td align="right">-4</td>
+<td align="right">0</td>
+<td>P</td>
+<td>1d4x</td>
+</tr>
+
+<tr>
+<td>y</td>
+<td align="right">yellow light</td>
+<td align="right">3</td>
+<td align="right">15</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td>fcsdepa*</td>
+<td>X10d20b</td>
+</tr>
+
+<tr>
+<td>y</td>
+<td align="right">black light</td>
+<td align="right">5</td>
+<td align="right">15</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td>fcsdepa*</td>
+<td>X10d12h</td>
+</tr>
+
+<tr>
+<td>z</td>
+<td align="right">zruty</td>
+<td align="right">9</td>
+<td align="right">8</td>
+<td align="right">3</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>3d4 3d4 3d6</td>
+</tr>
+
+<tr>
+<td>A</td>
+<td align="right">couatl</td>
+<td align="right">8</td>
+<td align="right">10</td>
+<td align="right">5</td>
+<td align="right">30</td>
+<td>p</td>
+<td>2d4P 1d3 H2d4w</td>
+</tr>
+
+<tr>
+<td>A</td>
+<td align="right">Aleax</td>
+<td align="right">10</td>
+<td align="right">8</td>
+<td align="right">0</td>
+<td align="right">30</td>
+<td>csep</td>
+<td>W1d6 W1d6 1d4</td>
+</tr>
+
+<tr>
+<td>A</td>
+<td align="right">Angel</td>
+<td align="right">14</td>
+<td align="right">10</td>
+<td align="right">-4</td>
+<td align="right">55</td>
+<td>csep</td>
+<td>W1d6 W1d6 1d4 M2d6M</td>
+</tr>
+
+<tr>
+<td>A</td>
+<td align="right">ki-rin</td>
+<td align="right">16</td>
+<td align="right">18</td>
+<td align="right">-5</td>
+<td align="right">90</td>
+<td>&#160;</td>
+<td>2d4 2d4 3d6 M2d6+</td>
+</tr>
+
+<tr>
+<td>A</td>
+<td align="right">Archon</td>
+<td align="right">19</td>
+<td align="right">16</td>
+<td align="right">-6</td>
+<td align="right">80</td>
+<td>fcsep</td>
+<td>W2d4 W2d4 G2d6b 1d8 M4d6+</td>
+</tr>
+
+<tr>
+<td>B</td>
+<td align="right">bat</td>
+<td align="right">0</td>
+<td align="right">22</td>
+<td align="right">8</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>1d4</td>
+</tr>
+
+<tr>
+<td>B</td>
+<td align="right">giant bat</td>
+<td align="right">2</td>
+<td align="right">22</td>
+<td align="right">7</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>1d6</td>
+</tr>
+
+<tr>
+<td>B</td>
+<td align="right">raven</td>
+<td align="right">4</td>
+<td align="right">20</td>
+<td align="right">6</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>1d6 1d6b</td>
+</tr>
+
+<tr>
+<td>B</td>
+<td align="right">vampire bat</td>
+<td align="right">5</td>
+<td align="right">20</td>
+<td align="right">6</td>
+<td align="right">0</td>
+<td>sp</td>
+<td>1d6 0d0P</td>
+</tr>
+
+<tr>
+<th align="left" colspan="2">SPECIES</th>
+<th><a href="#lev">LEV</a></th>
+<th><a href="#spd">SPD</a></th>
+<th><a href="#ac">AC</a></th>
+<th><a href="#mr">MR</a></th>
+<th><a href="#resists">RESISTS</a></th>
+<th align="left"><a href="#attacks">ATTACKS</a></th>
+</tr>
+
+<tr>
+<td>C</td>
+<td align="right">plains centaur</td>
+<td align="right">4</td>
+<td align="right">18</td>
+<td align="right">4</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>W1d6 1d6</td>
+</tr>
+
+<tr>
+<td>C</td>
+<td align="right">forest centaur</td>
+<td align="right">5</td>
+<td align="right">18</td>
+<td align="right">3</td>
+<td align="right">10</td>
+<td>&#160;</td>
+<td>W1d8 1d6</td>
+</tr>
+
+<tr>
+<td>C</td>
+<td align="right">mountain centaur</td>
+<td align="right">6</td>
+<td align="right">20</td>
+<td align="right">2</td>
+<td align="right">10</td>
+<td>&#160;</td>
+<td>W1d10 1d6 1d6</td>
+</tr>
+
+<tr>
+<td>D</td>
+<td align="right">baby gray dragon</td>
+<td align="right">12</td>
+<td align="right">9</td>
+<td align="right">2</td>
+<td align="right">10</td>
+<td>&#160;</td>
+<td>2d6</td>
+</tr>
+
+<tr>
+<td>D</td>
+<td align="right">baby silver dragon</td>
+<td align="right">12</td>
+<td align="right">9</td>
+<td align="right">2</td>
+<td align="right">10</td>
+<td>&#160;</td>
+<td>2d6</td>
+</tr>
+
+<tr>
+<td>D</td>
+<td align="right">baby red dragon</td>
+<td align="right">12</td>
+<td align="right">9</td>
+<td align="right">2</td>
+<td align="right">10</td>
+<td>f</td>
+<td>2d6</td>
+</tr>
+
+<tr>
+<td>D</td>
+<td align="right">baby white dragon</td>
+<td align="right">12</td>
+<td align="right">9</td>
+<td align="right">2</td>
+<td align="right">10</td>
+<td>c</td>
+<td>2d6</td>
+</tr>
+
+<tr>
+<td>D</td>
+<td align="right">baby orange dragon</td>
+<td align="right">12</td>
+<td align="right">9</td>
+<td align="right">2</td>
+<td align="right">10</td>
+<td>s</td>
+<td>2d6</td>
+</tr>
+
+<tr>
+<td>D</td>
+<td align="right">baby black dragon</td>
+<td align="right">12</td>
+<td align="right">9</td>
+<td align="right">2</td>
+<td align="right">10</td>
+<td>d</td>
+<td>2d6</td>
+</tr>
+
+<tr>
+<td>D</td>
+<td align="right">baby blue dragon</td>
+<td align="right">12</td>
+<td align="right">9</td>
+<td align="right">2</td>
+<td align="right">10</td>
+<td>e</td>
+<td>2d6</td>
+</tr>
+
+<tr>
+<td>D</td>
+<td align="right">baby green dragon</td>
+<td align="right">12</td>
+<td align="right">9</td>
+<td align="right">2</td>
+<td align="right">10</td>
+<td>p</td>
+<td>2d6</td>
+</tr>
+
+<tr>
+<td>D</td>
+<td align="right">baby yellow dragon</td>
+<td align="right">12</td>
+<td align="right">9</td>
+<td align="right">2</td>
+<td align="right">10</td>
+<td>a*</td>
+<td>2d6</td>
+</tr>
+
+<tr>
+<td>D</td>
+<td align="right">gray dragon</td>
+<td align="right">15</td>
+<td align="right">9</td>
+<td align="right">-1</td>
+<td align="right">20</td>
+<td>&#160;</td>
+<td>B4d6M 3d8 1d4 1d4</td>
+</tr>
+
+<tr>
+<td>D</td>
+<td align="right">silver dragon</td>
+<td align="right">15</td>
+<td align="right">9</td>
+<td align="right">-1</td>
+<td align="right">20</td>
+<td>c</td>
+<td>B4d6C 3d8 1d4 1d4</td>
+</tr>
+
+<tr>
+<td>D</td>
+<td align="right">red dragon</td>
+<td align="right">15</td>
+<td align="right">9</td>
+<td align="right">-1</td>
+<td align="right">20</td>
+<td>F</td>
+<td>B6d6F 3d8 1d4 1d4</td>
+</tr>
+
+<tr>
+<td>D</td>
+<td align="right">white dragon</td>
+<td align="right">15</td>
+<td align="right">9</td>
+<td align="right">-1</td>
+<td align="right">20</td>
+<td>C</td>
+<td>B4d6C 3d8 1d4 1d4</td>
+</tr>
+
+<tr>
+<td>D</td>
+<td align="right">orange dragon</td>
+<td align="right">15</td>
+<td align="right">9</td>
+<td align="right">-1</td>
+<td align="right">20</td>
+<td>S</td>
+<td>B4d25S 3d8 1d4 1d4</td>
+</tr>
+
+<tr>
+<td>D</td>
+<td align="right">black dragon</td>
+<td align="right">15</td>
+<td align="right">9</td>
+<td align="right">-1</td>
+<td align="right">20</td>
+<td>D</td>
+<td>B4d10D 3d8 1d4 1d4</td>
+</tr>
+
+<tr>
+<td>D</td>
+<td align="right">blue dragon</td>
+<td align="right">15</td>
+<td align="right">9</td>
+<td align="right">-1</td>
+<td align="right">20</td>
+<td>E</td>
+<td>B4d6E 3d8 1d4 1d4</td>
+</tr>
+
+<tr>
+<td>D</td>
+<td align="right">green dragon</td>
+<td align="right">15</td>
+<td align="right">9</td>
+<td align="right">-1</td>
+<td align="right">20</td>
+<td>P</td>
+<td>B4d6P 3d8 1d4 1d4</td>
+</tr>
+
+<tr>
+<td>D</td>
+<td align="right">yellow dragon</td>
+<td align="right">15</td>
+<td align="right">9</td>
+<td align="right">-1</td>
+<td align="right">20</td>
+<td>a*</td>
+<td>B4d6A 3d8 1d4 1d4</td>
+</tr>
+
+<tr>
+<th align="left" colspan="2">SPECIES</th>
+<th><a href="#lev">LEV</a></th>
+<th><a href="#spd">SPD</a></th>
+<th><a href="#ac">AC</a></th>
+<th><a href="#mr">MR</a></th>
+<th><a href="#resists">RESISTS</a></th>
+<th align="left"><a href="#attacks">ATTACKS</a></th>
+</tr>
+
+<tr>
+<td>E</td>
+<td align="right">stalker</td>
+<td align="right">8</td>
+<td align="right">12</td>
+<td align="right">3</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>4d4</td>
+</tr>
+
+<tr>
+<td>E</td>
+<td align="right">air elemental</td>
+<td align="right">8</td>
+<td align="right">36</td>
+<td align="right">2</td>
+<td align="right">30</td>
+<td>p*</td>
+<td>E1d10</td>
+</tr>
+
+<tr>
+<td>E</td>
+<td align="right">fire elemental</td>
+<td align="right">8</td>
+<td align="right">12</td>
+<td align="right">2</td>
+<td align="right">30</td>
+<td>fp*</td>
+<td>3d6F (0d4F)</td>
+</tr>
+
+<tr>
+<td>E</td>
+<td align="right">earth elemental</td>
+<td align="right">8</td>
+<td align="right">6</td>
+<td align="right">2</td>
+<td align="right">30</td>
+<td>fcp*</td>
+<td>4d6</td>
+</tr>
+
+<tr>
+<td>E</td>
+<td align="right">water elemental</td>
+<td align="right">8</td>
+<td align="right">6</td>
+<td align="right">2</td>
+<td align="right">30</td>
+<td>p*</td>
+<td>5d6</td>
+</tr>
+
+<tr>
+<td>F</td>
+<td align="right">lichen</td>
+<td align="right">0</td>
+<td align="right">1</td>
+<td align="right">9</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>0d0m</td>
+</tr>
+
+<tr>
+<td>F</td>
+<td align="right">brown mold</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">9</td>
+<td align="right">0</td>
+<td>CP</td>
+<td>(0d6C)</td>
+</tr>
+
+<tr>
+<td>F</td>
+<td align="right">yellow mold</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">9</td>
+<td align="right">0</td>
+<td>P</td>
+<td>(0d4s)</td>
+</tr>
+
+<tr>
+<td>F</td>
+<td align="right">green mold</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">9</td>
+<td align="right">0</td>
+<td>a*</td>
+<td>(0d4A)</td>
+</tr>
+
+<tr>
+<td>F</td>
+<td align="right">red mold</td>
+<td align="right">1</td>
+<td align="right">0</td>
+<td align="right">9</td>
+<td align="right">0</td>
+<td>FP</td>
+<td>(0d4F)</td>
+</tr>
+
+<tr>
+<td>F</td>
+<td align="right">shrieker</td>
+<td align="right">3</td>
+<td align="right">1</td>
+<td align="right">7</td>
+<td align="right">0</td>
+<td>P</td>
+<td>&#160;</td>
+</tr>
+
+<tr>
+<td>F</td>
+<td align="right">violet fungus</td>
+<td align="right">3</td>
+<td align="right">1</td>
+<td align="right">7</td>
+<td align="right">0</td>
+<td>P</td>
+<td>1d4 0d0m</td>
+</tr>
+
+<tr>
+<td>G</td>
+<td align="right">gnome</td>
+<td align="right">1</td>
+<td align="right">6</td>
+<td align="right">10</td>
+<td align="right">4</td>
+<td>&#160;</td>
+<td>W1d6</td>
+</tr>
+
+<tr>
+<td>G</td>
+<td align="right">gnome lord</td>
+<td align="right">3</td>
+<td align="right">8</td>
+<td align="right">10</td>
+<td align="right">4</td>
+<td>&#160;</td>
+<td>W1d8</td>
+</tr>
+
+<tr>
+<td>G</td>
+<td align="right">gnomish wizard</td>
+<td align="right">3</td>
+<td align="right">10</td>
+<td align="right">4</td>
+<td align="right">10</td>
+<td>&#160;</td>
+<td>M0d0+</td>
+</tr>
+
+<tr>
+<td>G</td>
+<td align="right">gnome king</td>
+<td align="right">5</td>
+<td align="right">10</td>
+<td align="right">10</td>
+<td align="right">20</td>
+<td>&#160;</td>
+<td>W2d6</td>
+</tr>
+
+<tr>
+<th align="left" colspan="2">SPECIES</th>
+<th><a href="#lev">LEV</a></th>
+<th><a href="#spd">SPD</a></th>
+<th><a href="#ac">AC</a></th>
+<th><a href="#mr">MR</a></th>
+<th><a href="#resists">RESISTS</a></th>
+<th align="left"><a href="#attacks">ATTACKS</a></th>
+</tr>
+
+<tr>
+<td>H</td>
+<td align="right">giant</td>
+<td align="right">6</td>
+<td align="right">6</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>W2d10</td>
+</tr>
+
+<tr>
+<td>H</td>
+<td align="right">stone giant</td>
+<td align="right">6</td>
+<td align="right">6</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>W2d10</td>
+</tr>
+
+<tr>
+<td>H</td>
+<td align="right">hill giant</td>
+<td align="right">8</td>
+<td align="right">10</td>
+<td align="right">6</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>W2d8</td>
+</tr>
+
+<tr>
+<td>H</td>
+<td align="right">fire giant</td>
+<td align="right">9</td>
+<td align="right">12</td>
+<td align="right">4</td>
+<td align="right">5</td>
+<td>F</td>
+<td>W2d10</td>
+</tr>
+
+<tr>
+<td>H</td>
+<td align="right">frost giant</td>
+<td align="right">10</td>
+<td align="right">12</td>
+<td align="right">3</td>
+<td align="right">10</td>
+<td>C</td>
+<td>W2d12</td>
+</tr>
+
+<tr>
+<td>H</td>
+<td align="right">storm giant</td>
+<td align="right">16</td>
+<td align="right">12</td>
+<td align="right">3</td>
+<td align="right">10</td>
+<td>E</td>
+<td>W2d12</td>
+</tr>
+
+<tr>
+<td>H</td>
+<td align="right">ettin</td>
+<td align="right">10</td>
+<td align="right">12</td>
+<td align="right">3</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>W2d8 W3d6</td>
+</tr>
+
+<tr>
+<td>H</td>
+<td align="right">titan</td>
+<td align="right">16</td>
+<td align="right">18</td>
+<td align="right">-3</td>
+<td align="right">70</td>
+<td>&#160;</td>
+<td>W2d8 M0d0+</td>
+</tr>
+
+<tr>
+<td>H</td>
+<td align="right">minotaur</td>
+<td align="right">15</td>
+<td align="right">15</td>
+<td align="right">6</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>3d10 3d10 2d8</td>
+</tr>
+
+<tr>
+<td>J</td>
+<td align="right">jabberwock</td>
+<td align="right">15</td>
+<td align="right">12</td>
+<td align="right">-2</td>
+<td align="right">50</td>
+<td>&#160;</td>
+<td>2d10 2d10 2d10 2d10</td>
+</tr>
+
+<tr>
+<td>K</td>
+<td align="right">Keystone Kop</td>
+<td align="right">1</td>
+<td align="right">6</td>
+<td align="right">10</td>
+<td align="right">10</td>
+<td>&#160;</td>
+<td>W1d4</td>
+</tr>
+
+<tr>
+<td>K</td>
+<td align="right">Kop Sergeant</td>
+<td align="right">2</td>
+<td align="right">8</td>
+<td align="right">10</td>
+<td align="right">10</td>
+<td>&#160;</td>
+<td>W1d6</td>
+</tr>
+
+<tr>
+<td>K</td>
+<td align="right">Kop Lieutenant</td>
+<td align="right">3</td>
+<td align="right">10</td>
+<td align="right">10</td>
+<td align="right">20</td>
+<td>&#160;</td>
+<td>W1d8</td>
+</tr>
+
+<tr>
+<td>K</td>
+<td align="right">Kop Kaptain</td>
+<td align="right">4</td>
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">20</td>
+<td>&#160;</td>
+<td>W2d6</td>
+</tr>
+
+<tr>
+<td>L</td>
+<td align="right">lich</td>
+<td align="right">11</td>
+<td align="right">6</td>
+<td align="right">0</td>
+<td align="right">30</td>
+<td>Csp</td>
+<td>1d10C M0d0+</td>
+</tr>
+
+<tr>
+<td>L</td>
+<td align="right">demilich</td>
+<td align="right">14</td>
+<td align="right">9</td>
+<td align="right">-2</td>
+<td align="right">60</td>
+<td>Csp</td>
+<td>3d4C M0d0+</td>
+</tr>
+
+<tr>
+<td>L</td>
+<td align="right">master lich</td>
+<td align="right">17</td>
+<td align="right">9</td>
+<td align="right">-4</td>
+<td align="right">90</td>
+<td>FCsp</td>
+<td>3d6C M0d0+</td>
+</tr>
+
+<tr>
+<td>L</td>
+<td align="right">arch-lich</td>
+<td align="right">25</td>
+<td align="right">9</td>
+<td align="right">-6</td>
+<td align="right">90</td>
+<td>FCsep</td>
+<td>5d6C M0d0+</td>
+</tr>
+
+<tr>
+<th align="left" colspan="2">SPECIES</th>
+<th><a href="#lev">LEV</a></th>
+<th><a href="#spd">SPD</a></th>
+<th><a href="#ac">AC</a></th>
+<th><a href="#mr">MR</a></th>
+<th><a href="#resists">RESISTS</a></th>
+<th align="left"><a href="#attacks">ATTACKS</a></th>
+</tr>
+
+<tr>
+<td>M</td>
+<td align="right">kobold mummy</td>
+<td align="right">3</td>
+<td align="right">8</td>
+<td align="right">6</td>
+<td align="right">20</td>
+<td>csp</td>
+<td>1d4</td>
+</tr>
+
+<tr>
+<td>M</td>
+<td align="right">gnome mummy</td>
+<td align="right">4</td>
+<td align="right">10</td>
+<td align="right">6</td>
+<td align="right">20</td>
+<td>csp</td>
+<td>1d6</td>
+</tr>
+
+<tr>
+<td>M</td>
+<td align="right">orc mummy</td>
+<td align="right">5</td>
+<td align="right">10</td>
+<td align="right">5</td>
+<td align="right">20</td>
+<td>csp</td>
+<td>1d6</td>
+</tr>
+
+<tr>
+<td>M</td>
+<td align="right">dwarf mummy</td>
+<td align="right">5</td>
+<td align="right">10</td>
+<td align="right">5</td>
+<td align="right">20</td>
+<td>csp</td>
+<td>1d6</td>
+</tr>
+
+<tr>
+<td>M</td>
+<td align="right">elf mummy</td>
+<td align="right">6</td>
+<td align="right">12</td>
+<td align="right">4</td>
+<td align="right">30</td>
+<td>csp</td>
+<td>2d4</td>
+</tr>
+
+<tr>
+<td>M</td>
+<td align="right">human mummy</td>
+<td align="right">6</td>
+<td align="right">12</td>
+<td align="right">4</td>
+<td align="right">30</td>
+<td>csp</td>
+<td>2d4 2d4</td>
+</tr>
+
+<tr>
+<td>M</td>
+<td align="right">ettin mummy</td>
+<td align="right">7</td>
+<td align="right">12</td>
+<td align="right">4</td>
+<td align="right">30</td>
+<td>csp</td>
+<td>2d6 2d6</td>
+</tr>
+
+<tr>
+<td>M</td>
+<td align="right">giant mummy</td>
+<td align="right">8</td>
+<td align="right">14</td>
+<td align="right">3</td>
+<td align="right">30</td>
+<td>csp</td>
+<td>3d4 3d4</td>
+</tr>
+
+<tr>
+<td>N</td>
+<td align="right">red naga hatchling</td>
+<td align="right">3</td>
+<td align="right">10</td>
+<td align="right">6</td>
+<td align="right">0</td>
+<td>FP</td>
+<td>1d4</td>
+</tr>
+
+<tr>
+<td>N</td>
+<td align="right">black naga hatchling</td>
+<td align="right">3</td>
+<td align="right">10</td>
+<td align="right">6</td>
+<td align="right">0</td>
+<td>Pa*</td>
+<td>1d4</td>
+</tr>
+
+<tr>
+<td>N</td>
+<td align="right">golden naga hatchlin</td>
+<td align="right">3</td>
+<td align="right">10</td>
+<td align="right">6</td>
+<td align="right">0</td>
+<td>P</td>
+<td>1d4</td>
+</tr>
+
+<tr>
+<td>N</td>
+<td align="right">guardian naga hatchl</td>
+<td align="right">3</td>
+<td align="right">10</td>
+<td align="right">6</td>
+<td align="right">0</td>
+<td>P</td>
+<td>1d4</td>
+</tr>
+
+<tr>
+<td>N</td>
+<td align="right">red naga</td>
+<td align="right">6</td>
+<td align="right">12</td>
+<td align="right">4</td>
+<td align="right">0</td>
+<td>FP</td>
+<td>2d4 B2d6F</td>
+</tr>
+
+<tr>
+<td>N</td>
+<td align="right">black naga</td>
+<td align="right">8</td>
+<td align="right">14</td>
+<td align="right">2</td>
+<td align="right">10</td>
+<td>Pa*</td>
+<td>2d6 S0d0A</td>
+</tr>
+
+<tr>
+<td>N</td>
+<td align="right">golden naga</td>
+<td align="right">10</td>
+<td align="right">14</td>
+<td align="right">2</td>
+<td align="right">70</td>
+<td>P</td>
+<td>2d6 M4d6+</td>
+</tr>
+
+<tr>
+<td>N</td>
+<td align="right">guardian naga</td>
+<td align="right">12</td>
+<td align="right">16</td>
+<td align="right">0</td>
+<td align="right">50</td>
+<td>P</td>
+<td>1d6. S1d6P H2d4</td>
+</tr>
+
+<tr>
+<td>O</td>
+<td align="right">ogre</td>
+<td align="right">5</td>
+<td align="right">10</td>
+<td align="right">5</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>W2d5</td>
+</tr>
+
+<tr>
+<td>O</td>
+<td align="right">ogre lord</td>
+<td align="right">7</td>
+<td align="right">12</td>
+<td align="right">3</td>
+<td align="right">30</td>
+<td>&#160;</td>
+<td>W2d6</td>
+</tr>
+
+<tr>
+<td>O</td>
+<td align="right">ogre king</td>
+<td align="right">9</td>
+<td align="right">14</td>
+<td align="right">4</td>
+<td align="right">60</td>
+<td>&#160;</td>
+<td>W3d5</td>
+</tr>
+
+<tr>
+<td>P</td>
+<td align="right">gray ooze</td>
+<td align="right">3</td>
+<td align="right">1</td>
+<td align="right">8</td>
+<td align="right">0</td>
+<td>FCPa*</td>
+<td>2d8R</td>
+</tr>
+
+<tr>
+<td>P</td>
+<td align="right">brown pudding</td>
+<td align="right">5</td>
+<td align="right">3</td>
+<td align="right">8</td>
+<td align="right">0</td>
+<td>CEPa*</td>
+<td>0d0r</td>
+</tr>
+
+<tr>
+<td>P</td>
+<td align="right">black pudding</td>
+<td align="right">10</td>
+<td align="right">6</td>
+<td align="right">6</td>
+<td align="right">0</td>
+<td>CEPa*</td>
+<td>3d8R (0d0R)</td>
+</tr>
+
+<tr>
+<td>P</td>
+<td align="right">green slime</td>
+<td align="right">6</td>
+<td align="right">6</td>
+<td align="right">6</td>
+<td align="right">0</td>
+<td>cepa*</td>
+<td>1d4@ (0d0@)</td>
+</tr>
+
+<tr>
+<th align="left" colspan="2">SPECIES</th>
+<th><a href="#lev">LEV</a></th>
+<th><a href="#spd">SPD</a></th>
+<th><a href="#ac">AC</a></th>
+<th><a href="#mr">MR</a></th>
+<th><a href="#resists">RESISTS</a></th>
+<th align="left"><a href="#attacks">ATTACKS</a></th>
+</tr>
+
+<tr>
+<td>Q</td>
+<td align="right">quantum mechanic</td>
+<td align="right">7</td>
+<td align="right">12</td>
+<td align="right">3</td>
+<td align="right">10</td>
+<td>p</td>
+<td>1d4t</td>
+</tr>
+
+<tr>
+<td>R</td>
+<td align="right">rust monster</td>
+<td align="right">5</td>
+<td align="right">18</td>
+<td align="right">2</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>0d0R 0d0R (0d0R)</td>
+</tr>
+
+<tr>
+<td>R</td>
+<td align="right">disenchanter</td>
+<td align="right">12</td>
+<td align="right">12</td>
+<td align="right">-10</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>4d4" (0d0")</td>
+</tr>
+
+<tr>
+<td>S</td>
+<td align="right">garter snake</td>
+<td align="right">1</td>
+<td align="right">8</td>
+<td align="right">8</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>1d2</td>
+</tr>
+
+<tr>
+<td>S</td>
+<td align="right">snake</td>
+<td align="right">4</td>
+<td align="right">15</td>
+<td align="right">3</td>
+<td align="right">0</td>
+<td>P</td>
+<td>1d6P</td>
+</tr>
+
+<tr>
+<td>S</td>
+<td align="right">water moccasin</td>
+<td align="right">4</td>
+<td align="right">15</td>
+<td align="right">3</td>
+<td align="right">0</td>
+<td>P</td>
+<td>1d6P</td>
+</tr>
+
+<tr>
+<td>S</td>
+<td align="right">pit viper</td>
+<td align="right">6</td>
+<td align="right">15</td>
+<td align="right">2</td>
+<td align="right">0</td>
+<td>P</td>
+<td>1d4P 1d4P</td>
+</tr>
+
+<tr>
+<td>S</td>
+<td align="right">python</td>
+<td align="right">6</td>
+<td align="right">3</td>
+<td align="right">5</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>1d4 0d0 H1d4w H2d4</td>
+</tr>
+
+<tr>
+<td>S</td>
+<td align="right">cobra</td>
+<td align="right">6</td>
+<td align="right">18</td>
+<td align="right">2</td>
+<td align="right">0</td>
+<td>P</td>
+<td>2d4P S0d0b</td>
+</tr>
+
+<tr>
+<td>T</td>
+<td align="right">troll</td>
+<td align="right">7</td>
+<td align="right">12</td>
+<td align="right">4</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>W4d2 4d2 2d6</td>
+</tr>
+
+<tr>
+<td>T</td>
+<td align="right">ice troll</td>
+<td align="right">9</td>
+<td align="right">10</td>
+<td align="right">2</td>
+<td align="right">20</td>
+<td>C</td>
+<td>W2d6 2d6C 2d6</td>
+</tr>
+
+<tr>
+<td>T</td>
+<td align="right">rock troll</td>
+<td align="right">9</td>
+<td align="right">12</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>W3d6 2d8 2d6</td>
+</tr>
+
+<tr>
+<td>T</td>
+<td align="right">water troll</td>
+<td align="right">11</td>
+<td align="right">14</td>
+<td align="right">4</td>
+<td align="right">40</td>
+<td>&#160;</td>
+<td>2W2d8 2d8 2d6</td>
+</tr>
+
+<tr>
+<td>T</td>
+<td align="right">Olog-hai</td>
+<td align="right">13</td>
+<td align="right">12</td>
+<td align="right">-4</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>W3d6 2d8 2d6</td>
+</tr>
+
+<tr>
+<td>U</td>
+<td align="right">umber hulk</td>
+<td align="right">9</td>
+<td align="right">6</td>
+<td align="right">2</td>
+<td align="right">25</td>
+<td>&#160;</td>
+<td>3d4 3d4 2d5 G0d0c</td>
+</tr>
+
+<tr>
+<th align="left" colspan="2">SPECIES</th>
+<th><a href="#lev">LEV</a></th>
+<th><a href="#spd">SPD</a></th>
+<th><a href="#ac">AC</a></th>
+<th><a href="#mr">MR</a></th>
+<th><a href="#resists">RESISTS</a></th>
+<th align="left"><a href="#attacks">ATTACKS</a></th>
+</tr>
+
+<tr>
+<td>V</td>
+<td align="right">vampire</td>
+<td align="right">10</td>
+<td align="right">12</td>
+<td align="right">1</td>
+<td align="right">25</td>
+<td>sp</td>
+<td>1d6 1d6V</td>
+</tr>
+
+<tr>
+<td>V</td>
+<td align="right">vampire lord</td>
+<td align="right">12</td>
+<td align="right">14</td>
+<td align="right">0</td>
+<td align="right">50</td>
+<td>sp</td>
+<td>1d8 1d8V</td>
+</tr>
+
+<tr>
+<td>V</td>
+<td align="right">Vlad the Impaler</td>
+<td align="right">14</td>
+<td align="right">18</td>
+<td align="right">-3</td>
+<td align="right">80</td>
+<td>sp</td>
+<td>W1d10 1d10V</td>
+</tr>
+
+<tr>
+<td>W</td>
+<td align="right">barrow wight</td>
+<td align="right">3</td>
+<td align="right">12</td>
+<td align="right">5</td>
+<td align="right">5</td>
+<td>csp</td>
+<td>W0d0V M0d0+ 1d4</td>
+</tr>
+
+<tr>
+<td>W</td>
+<td align="right">wraith</td>
+<td align="right">6</td>
+<td align="right">12</td>
+<td align="right">4</td>
+<td align="right">15</td>
+<td>csp*</td>
+<td>1d6V</td>
+</tr>
+
+<tr>
+<td>W</td>
+<td align="right">Nazgul</td>
+<td align="right">13</td>
+<td align="right">12</td>
+<td align="right">0</td>
+<td align="right">25</td>
+<td>csp</td>
+<td>W1d4V B2d25S</td>
+</tr>
+
+<tr>
+<td>X</td>
+<td align="right">xorn</td>
+<td align="right">8</td>
+<td align="right">9</td>
+<td align="right">-2</td>
+<td align="right">20</td>
+<td>fc*</td>
+<td>1d3 1d3 1d3 4d6</td>
+</tr>
+
+<tr>
+<td>Y</td>
+<td align="right">monkey</td>
+<td align="right">2</td>
+<td align="right">12</td>
+<td align="right">6</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>0d0- 1d3</td>
+</tr>
+
+<tr>
+<td>Y</td>
+<td align="right">ape</td>
+<td align="right">4</td>
+<td align="right">12</td>
+<td align="right">6</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>1d3 1d3 1d6</td>
+</tr>
+
+<tr>
+<td>Y</td>
+<td align="right">owlbear</td>
+<td align="right">5</td>
+<td align="right">12</td>
+<td align="right">5</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>1d6 1d6 H2d8</td>
+</tr>
+
+<tr>
+<td>Y</td>
+<td align="right">yeti</td>
+<td align="right">5</td>
+<td align="right">15</td>
+<td align="right">6</td>
+<td align="right">0</td>
+<td>C</td>
+<td>1d6 1d6 1d4</td>
+</tr>
+
+<tr>
+<td>Y</td>
+<td align="right">carnivorous ape</td>
+<td align="right">6</td>
+<td align="right">12</td>
+<td align="right">6</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>1d4 1d4 H1d8</td>
+</tr>
+
+<tr>
+<td>Y</td>
+<td align="right">sasquatch</td>
+<td align="right">7</td>
+<td align="right">15</td>
+<td align="right">6</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>1d6 1d6 1d8</td>
+</tr>
+
+<tr>
+<td>Z</td>
+<td align="right">kobold zombie</td>
+<td align="right">0</td>
+<td align="right">6</td>
+<td align="right">10</td>
+<td align="right">0</td>
+<td>csp</td>
+<td>1d4</td>
+</tr>
+
+<tr>
+<td>Z</td>
+<td align="right">gnome zombie</td>
+<td align="right">1</td>
+<td align="right">6</td>
+<td align="right">10</td>
+<td align="right">0</td>
+<td>csp</td>
+<td>1d5</td>
+</tr>
+
+<tr>
+<td>Z</td>
+<td align="right">orc zombie</td>
+<td align="right">2</td>
+<td align="right">6</td>
+<td align="right">9</td>
+<td align="right">0</td>
+<td>csp</td>
+<td>1d6</td>
+</tr>
+
+<tr>
+<td>Z</td>
+<td align="right">dwarf zombie</td>
+<td align="right">2</td>
+<td align="right">6</td>
+<td align="right">9</td>
+<td align="right">0</td>
+<td>csp</td>
+<td>1d6</td>
+</tr>
+
+<tr>
+<td>Z</td>
+<td align="right">elf zombie</td>
+<td align="right">3</td>
+<td align="right">6</td>
+<td align="right">9</td>
+<td align="right">0</td>
+<td>csp</td>
+<td>1d7</td>
+</tr>
+
+<tr>
+<td>Z</td>
+<td align="right">human zombie</td>
+<td align="right">4</td>
+<td align="right">6</td>
+<td align="right">8</td>
+<td align="right">0</td>
+<td>csp</td>
+<td>1d8</td>
+</tr>
+
+<tr>
+<td>Z</td>
+<td align="right">ettin zombie</td>
+<td align="right">6</td>
+<td align="right">8</td>
+<td align="right">6</td>
+<td align="right">0</td>
+<td>csp</td>
+<td>1d10 1d10</td>
+</tr>
+
+<tr>
+<td>Z</td>
+<td align="right">giant zombie</td>
+<td align="right">8</td>
+<td align="right">8</td>
+<td align="right">6</td>
+<td align="right">0</td>
+<td>csp</td>
+<td>2d8 2d8</td>
+</tr>
+
+<tr>
+<td>Z</td>
+<td align="right">ghoul</td>
+<td align="right">3</td>
+<td align="right">6</td>
+<td align="right">10</td>
+<td align="right">0</td>
+<td>csp</td>
+<td>1d2. 1d3</td>
+</tr>
+
+<tr>
+<td>Z</td>
+<td align="right">skeleton</td>
+<td align="right">12</td>
+<td align="right">8</td>
+<td align="right">4</td>
+<td align="right">0</td>
+<td>csp*</td>
+<td>W2d6 1d6&lt;</td>
+</tr>
+
+<tr>
+<th align="left" colspan="2">SPECIES</th>
+<th><a href="#lev">LEV</a></th>
+<th><a href="#spd">SPD</a></th>
+<th><a href="#ac">AC</a></th>
+<th><a href="#mr">MR</a></th>
+<th><a href="#resists">RESISTS</a></th>
+<th align="left"><a href="#attacks">ATTACKS</a></th>
+</tr>
+
+<tr>
+<td>'</td>
+<td align="right">straw golem</td>
+<td align="right">3</td>
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">0</td>
+<td>sp</td>
+<td>1d2 1d2</td>
+</tr>
+
+<tr>
+<td>'</td>
+<td align="right">paper golem</td>
+<td align="right">3</td>
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">0</td>
+<td>sp</td>
+<td>1d3</td>
+</tr>
+
+<tr>
+<td>'</td>
+<td align="right">rope golem</td>
+<td align="right">4</td>
+<td align="right">9</td>
+<td align="right">8</td>
+<td align="right">0</td>
+<td>sp</td>
+<td>1d4 1d4 H6d1</td>
+</tr>
+
+<tr>
+<td>'</td>
+<td align="right">gold golem</td>
+<td align="right">5</td>
+<td align="right">9</td>
+<td align="right">6</td>
+<td align="right">0</td>
+<td>spa</td>
+<td>2d3 2d3</td>
+</tr>
+
+<tr>
+<td>'</td>
+<td align="right">leather golem</td>
+<td align="right">6</td>
+<td align="right">6</td>
+<td align="right">6</td>
+<td align="right">0</td>
+<td>sp</td>
+<td>1d6 1d6</td>
+</tr>
+
+<tr>
+<td>'</td>
+<td align="right">wood golem</td>
+<td align="right">7</td>
+<td align="right">3</td>
+<td align="right">4</td>
+<td align="right">0</td>
+<td>sp</td>
+<td>3d4</td>
+</tr>
+
+<tr>
+<td>'</td>
+<td align="right">flesh golem</td>
+<td align="right">9</td>
+<td align="right">8</td>
+<td align="right">9</td>
+<td align="right">30</td>
+<td>FCSEP</td>
+<td>2d8 2d8</td>
+</tr>
+
+<tr>
+<td>'</td>
+<td align="right">clay golem</td>
+<td align="right">11</td>
+<td align="right">7</td>
+<td align="right">7</td>
+<td align="right">40</td>
+<td>sp</td>
+<td>3d10</td>
+</tr>
+
+<tr>
+<td>'</td>
+<td align="right">stone golem</td>
+<td align="right">14</td>
+<td align="right">6</td>
+<td align="right">5</td>
+<td align="right">50</td>
+<td>sp*</td>
+<td>3d8</td>
+</tr>
+
+<tr>
+<td>'</td>
+<td align="right">glass golem</td>
+<td align="right">16</td>
+<td align="right">6</td>
+<td align="right">1</td>
+<td align="right">50</td>
+<td>spa</td>
+<td>2d8 2d8</td>
+</tr>
+
+<tr>
+<td>'</td>
+<td align="right">iron golem</td>
+<td align="right">18</td>
+<td align="right">6</td>
+<td align="right">3</td>
+<td align="right">60</td>
+<td>fcsep</td>
+<td>W4d10 B4d6P</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">human</td>
+<td align="right">0</td>
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>W1d6</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">wererat</td>
+<td align="right">2</td>
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">10</td>
+<td>p</td>
+<td>W2d4</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">werejackal</td>
+<td align="right">2</td>
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">10</td>
+<td>p</td>
+<td>W2d4</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">werewolf</td>
+<td align="right">5</td>
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">20</td>
+<td>p</td>
+<td>W2d4</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">elf</td>
+<td align="right">10</td>
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">2</td>
+<td>S</td>
+<td>W1d8</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">Woodland-elf</td>
+<td align="right">4</td>
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">10</td>
+<td>S</td>
+<td>W2d4</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">Green-elf</td>
+<td align="right">5</td>
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">10</td>
+<td>S</td>
+<td>W2d4</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">Grey-elf</td>
+<td align="right">6</td>
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">10</td>
+<td>S</td>
+<td>W2d4</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">elf-lord</td>
+<td align="right">8</td>
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">20</td>
+<td>S</td>
+<td>W2d4 W2d4</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">Elvenking</td>
+<td align="right">9</td>
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">25</td>
+<td>S</td>
+<td>W2d4 W2d4</td>
+</tr>
+
+<tr>
+<th align="left" colspan="2">SPECIES</th>
+<th><a href="#lev">LEV</a></th>
+<th><a href="#spd">SPD</a></th>
+<th><a href="#ac">AC</a></th>
+<th><a href="#mr">MR</a></th>
+<th><a href="#resists">RESISTS</a></th>
+<th align="left"><a href="#attacks">ATTACKS</a></th>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">doppelganger</td>
+<td align="right">9</td>
+<td align="right">12</td>
+<td align="right">5</td>
+<td align="right">20</td>
+<td>s</td>
+<td>W1d12</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">nurse</td>
+<td align="right">11</td>
+<td align="right">6</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td>P</td>
+<td>2d6H</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">shopkeeper</td>
+<td align="right">12</td>
+<td align="right">18</td>
+<td align="right">0</td>
+<td align="right">50</td>
+<td>&#160;</td>
+<td>W4d4 W4d4</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">guard</td>
+<td align="right">12</td>
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">40</td>
+<td>&#160;</td>
+<td>W4d10</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">prisoner</td>
+<td align="right">12</td>
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>W1d6</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">Oracle</td>
+<td align="right">12</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td align="right">50</td>
+<td>&#160;</td>
+<td>(0d4M)</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">aligned priest</td>
+<td align="right">12</td>
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">50</td>
+<td>e</td>
+<td>W4d10 1d4 M0d0+</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">high priest</td>
+<td align="right">25</td>
+<td align="right">15</td>
+<td align="right">7</td>
+<td align="right">70</td>
+<td>fsep</td>
+<td>W4d10 2d8 M2d8+ M2d8+</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">soldier</td>
+<td align="right">6</td>
+<td align="right">10</td>
+<td align="right">10</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>W1d8</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">sergeant</td>
+<td align="right">8</td>
+<td align="right">10</td>
+<td align="right">10</td>
+<td align="right">5</td>
+<td>&#160;</td>
+<td>W2d6</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">lieutenant</td>
+<td align="right">10</td>
+<td align="right">10</td>
+<td align="right">10</td>
+<td align="right">15</td>
+<td>&#160;</td>
+<td>W3d4 W3d4</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">captain</td>
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">10</td>
+<td align="right">15</td>
+<td>&#160;</td>
+<td>W4d4 W4d4</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">watchman</td>
+<td align="right">6</td>
+<td align="right">10</td>
+<td align="right">10</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>W1d8</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">watch captain</td>
+<td align="right">10</td>
+<td align="right">10</td>
+<td align="right">10</td>
+<td align="right">15</td>
+<td>&#160;</td>
+<td>W3d4 W3d4</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">Medusa</td>
+<td align="right">20</td>
+<td align="right">12</td>
+<td align="right">2</td>
+<td align="right">50</td>
+<td>P*</td>
+<td>W2d4 1d8 G0d0* 1d6P</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">Wizard of Yendor</td>
+<td align="right">30</td>
+<td align="right">12</td>
+<td align="right">-8</td>
+<td align="right">100</td>
+<td>FP</td>
+<td>2d12- M0d0+</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">Croesus</td>
+<td align="right">20</td>
+<td align="right">15</td>
+<td align="right">0</td>
+<td align="right">40</td>
+<td>&#160;</td>
+<td>W4d10</td>
+</tr>
+
+<tr>
+<td align="right">&#160;</td>
+<td align="right">ghost</td>
+<td align="right">10</td>
+<td align="right">3</td>
+<td align="right">-5</td>
+<td align="right">50</td>
+<td>csdp*</td>
+<td>1d1</td>
+</tr>
+
+<tr>
+<td align="right">&#160;</td>
+<td align="right">shade</td>
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">10</td>
+<td align="right">0</td>
+<td>csdp*</td>
+<td>2d6. 1d6&lt;</td>
+</tr>
+
+<tr>
+<th align="left" colspan="2">SPECIES</th>
+<th><a href="#lev">LEV</a></th>
+<th><a href="#spd">SPD</a></th>
+<th><a href="#ac">AC</a></th>
+<th><a href="#mr">MR</a></th>
+<th><a href="#resists">RESISTS</a></th>
+<th align="left"><a href="#attacks">ATTACKS</a></th>
+</tr>
+
+<tr>
+<td>&amp;</td>
+<td align="right">water demon</td>
+<td align="right">8</td>
+<td align="right">12</td>
+<td align="right">-4</td>
+<td align="right">30</td>
+<td>fp</td>
+<td>W1d3 1d3 1d3</td>
+</tr>
+
+<tr>
+<td>&amp;</td>
+<td align="right">horned devil</td>
+<td align="right">6</td>
+<td align="right">9</td>
+<td align="right">-5</td>
+<td align="right">50</td>
+<td>fp</td>
+<td>W1d4 1d4 2d3 1d3</td>
+</tr>
+
+<tr>
+<td>&amp;</td>
+<td align="right">succubus</td>
+<td align="right">6</td>
+<td align="right">12</td>
+<td align="right">0</td>
+<td align="right">70</td>
+<td>fp</td>
+<td>0d0&amp; 1d3 1d3</td>
+</tr>
+
+<tr>
+<td>&amp;</td>
+<td align="right">incubus</td>
+<td align="right">6</td>
+<td align="right">12</td>
+<td align="right">0</td>
+<td align="right">70</td>
+<td>fp</td>
+<td>0d0&amp; 1d3 1d3</td>
+</tr>
+
+<tr>
+<td>&amp;</td>
+<td align="right">erinys</td>
+<td align="right">7</td>
+<td align="right">12</td>
+<td align="right">2</td>
+<td align="right">30</td>
+<td>fp</td>
+<td>W2d4P</td>
+</tr>
+
+<tr>
+<td>&amp;</td>
+<td align="right">barbed devil</td>
+<td align="right">8</td>
+<td align="right">12</td>
+<td align="right">0</td>
+<td align="right">35</td>
+<td>fp</td>
+<td>2d4 2d4 3d4</td>
+</tr>
+
+<tr>
+<td>&amp;</td>
+<td align="right">marilith</td>
+<td align="right">7</td>
+<td align="right">12</td>
+<td align="right">-6</td>
+<td align="right">80</td>
+<td>fp</td>
+<td>W2d4 W2d4 2d4 2d4 2d4 2d4</td>
+</tr>
+
+<tr>
+<td>&amp;</td>
+<td align="right">vrock</td>
+<td align="right">8</td>
+<td align="right">12</td>
+<td align="right">0</td>
+<td align="right">50</td>
+<td>fp</td>
+<td>1d4 1d4 1d8 1d8 1d6</td>
+</tr>
+
+<tr>
+<td>&amp;</td>
+<td align="right">hezrou</td>
+<td align="right">9</td>
+<td align="right">6</td>
+<td align="right">-2</td>
+<td align="right">55</td>
+<td>fp</td>
+<td>1d3 1d3 4d4</td>
+</tr>
+
+<tr>
+<td>&amp;</td>
+<td align="right">bone devil</td>
+<td align="right">9</td>
+<td align="right">15</td>
+<td align="right">-1</td>
+<td align="right">40</td>
+<td>fp</td>
+<td>W3d4 2d4P</td>
+</tr>
+
+<tr>
+<td>&amp;</td>
+<td align="right">ice devil</td>
+<td align="right">11</td>
+<td align="right">6</td>
+<td align="right">-4</td>
+<td align="right">55</td>
+<td>fcp</td>
+<td>1d4 1d4 2d4 3d4C</td>
+</tr>
+
+<tr>
+<td>&amp;</td>
+<td align="right">nalfeshnee</td>
+<td align="right">11</td>
+<td align="right">9</td>
+<td align="right">-1</td>
+<td align="right">65</td>
+<td>fp</td>
+<td>1d4 1d4 2d4 M0d0+</td>
+</tr>
+
+<tr>
+<td>&amp;</td>
+<td align="right">pit fiend</td>
+<td align="right">13</td>
+<td align="right">6</td>
+<td align="right">-3</td>
+<td align="right">65</td>
+<td>fp</td>
+<td>W4d2 W4d2 H2d4</td>
+</tr>
+
+<tr>
+<td>&amp;</td>
+<td align="right">balrog</td>
+<td align="right">16</td>
+<td align="right">5</td>
+<td align="right">-2</td>
+<td align="right">75</td>
+<td>fp</td>
+<td>W8d4 W4d6</td>
+</tr>
+
+<tr>
+<td>&amp;</td>
+<td align="right">Juiblex</td>
+<td align="right">50</td>
+<td align="right">3</td>
+<td align="right">-7</td>
+<td align="right">65</td>
+<td>fpa*</td>
+<td>E4d10# S3d6A</td>
+</tr>
+
+<tr>
+<td>&amp;</td>
+<td align="right">Yeenoghu</td>
+<td align="right">56</td>
+<td align="right">18</td>
+<td align="right">-5</td>
+<td align="right">80</td>
+<td>fp</td>
+<td>W3d6 W2d8c W1d6. M2d6M</td>
+</tr>
+
+<tr>
+<td>&amp;</td>
+<td align="right">Orcus</td>
+<td align="right">66</td>
+<td align="right">9</td>
+<td align="right">-6</td>
+<td align="right">85</td>
+<td>fp</td>
+<td>W3d6 3d4 3d4 M8d6+ 2d4P</td>
+</tr>
+
+<tr>
+<td>&amp;</td>
+<td align="right">Geryon</td>
+<td align="right">72</td>
+<td align="right">3</td>
+<td align="right">-3</td>
+<td align="right">75</td>
+<td>fp</td>
+<td>3d6 3d6 2d4P</td>
+</tr>
+
+<tr>
+<td>&amp;</td>
+<td align="right">Dispater</td>
+<td align="right">78</td>
+<td align="right">15</td>
+<td align="right">-2</td>
+<td align="right">80</td>
+<td>fp</td>
+<td>W4d6 M6d6+</td>
+</tr>
+
+<tr>
+<td>&amp;</td>
+<td align="right">Baalzebub</td>
+<td align="right">89</td>
+<td align="right">9</td>
+<td align="right">-5</td>
+<td align="right">85</td>
+<td>fp</td>
+<td>2d6P G2d6s</td>
+</tr>
+
+<tr>
+<td>&amp;</td>
+<td align="right">Asmodeus</td>
+<td align="right">105</td>
+<td align="right">12</td>
+<td align="right">-7</td>
+<td align="right">90</td>
+<td>fcp</td>
+<td>4d4 M6d6C</td>
+</tr>
+
+<tr>
+<td>&amp;</td>
+<td align="right">Demogorgon</td>
+<td align="right">106</td>
+<td align="right">15</td>
+<td align="right">-8</td>
+<td align="right">95</td>
+<td>fp</td>
+<td>M8d6+ 1d4V 1d6# 1d6#</td>
+</tr>
+
+<tr>
+<td>&amp;</td>
+<td align="right">Death</td>
+<td align="right">30</td>
+<td align="right">12</td>
+<td align="right">-5</td>
+<td align="right">100</td>
+<td>fcsep*</td>
+<td>8d8z 8d8z</td>
+</tr>
+
+<tr>
+<td>&amp;</td>
+<td align="right">Pestilence</td>
+<td align="right">30</td>
+<td align="right">12</td>
+<td align="right">-5</td>
+<td align="right">100</td>
+<td>fcsep*</td>
+<td>8d8z 8d8z</td>
+</tr>
+
+<tr>
+<td>&amp;</td>
+<td align="right">Famine</td>
+<td align="right">30</td>
+<td align="right">12</td>
+<td align="right">-5</td>
+<td align="right">100</td>
+<td>fcsep*</td>
+<td>8d8z 8d8z</td>
+</tr>
+
+<tr>
+<td>&amp;</td>
+<td align="right">djinni</td>
+<td align="right">7</td>
+<td align="right">12</td>
+<td align="right">4</td>
+<td align="right">30</td>
+<td>p*</td>
+<td>W2d8</td>
+</tr>
+
+<tr>
+<td>&amp;</td>
+<td align="right">sandestin</td>
+<td align="right">13</td>
+<td align="right">12</td>
+<td align="right">4</td>
+<td align="right">60</td>
+<td>*</td>
+<td>W2d6 W2d6</td>
+</tr>
+
+<tr>
+<th align="left" colspan="2">SPECIES</th>
+<th><a href="#lev">LEV</a></th>
+<th><a href="#spd">SPD</a></th>
+<th><a href="#ac">AC</a></th>
+<th><a href="#mr">MR</a></th>
+<th><a href="#resists">RESISTS</a></th>
+<th align="left"><a href="#attacks">ATTACKS</a></th>
+</tr>
+
+<tr>
+<td>;</td>
+<td align="right">jellyfish</td>
+<td align="right">3</td>
+<td align="right">3</td>
+<td align="right">6</td>
+<td align="right">0</td>
+<td>P</td>
+<td>3d3P</td>
+</tr>
+
+<tr>
+<td>;</td>
+<td align="right">piranha</td>
+<td align="right">5</td>
+<td align="right">12</td>
+<td align="right">4</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>2d6</td>
+</tr>
+
+<tr>
+<td>;</td>
+<td align="right">shark</td>
+<td align="right">7</td>
+<td align="right">12</td>
+<td align="right">2</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>5d6</td>
+</tr>
+
+<tr>
+<td>;</td>
+<td align="right">giant eel</td>
+<td align="right">5</td>
+<td align="right">9</td>
+<td align="right">-1</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>3d6 0d0w</td>
+</tr>
+
+<tr>
+<td>;</td>
+<td align="right">electric eel</td>
+<td align="right">7</td>
+<td align="right">10</td>
+<td align="right">-3</td>
+<td align="right">0</td>
+<td>E</td>
+<td>4d6E 0d0w</td>
+</tr>
+
+<tr>
+<td>;</td>
+<td align="right">kraken</td>
+<td align="right">20</td>
+<td align="right">3</td>
+<td align="right">6</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>2d4 2d4 H2d6w 5d4</td>
+</tr>
+
+<tr>
+<td>:</td>
+<td align="right">newt</td>
+<td align="right">0</td>
+<td align="right">6</td>
+<td align="right">8</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>1d2</td>
+</tr>
+
+<tr>
+<td>:</td>
+<td align="right">gecko</td>
+<td align="right">1</td>
+<td align="right">6</td>
+<td align="right">8</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>1d3</td>
+</tr>
+
+<tr>
+<td>:</td>
+<td align="right">iguana</td>
+<td align="right">2</td>
+<td align="right">6</td>
+<td align="right">7</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>1d4</td>
+</tr>
+
+<tr>
+<td>:</td>
+<td align="right">baby crocodile</td>
+<td align="right">3</td>
+<td align="right">6</td>
+<td align="right">7</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>1d4</td>
+</tr>
+
+<tr>
+<td>:</td>
+<td align="right">lizard</td>
+<td align="right">5</td>
+<td align="right">6</td>
+<td align="right">6</td>
+<td align="right">10</td>
+<td>*</td>
+<td>1d6</td>
+</tr>
+
+<tr>
+<td>:</td>
+<td align="right">chameleon</td>
+<td align="right">6</td>
+<td align="right">5</td>
+<td align="right">6</td>
+<td align="right">10</td>
+<td>&#160;</td>
+<td>4d2</td>
+</tr>
+
+<tr>
+<td>:</td>
+<td align="right">crocodile</td>
+<td align="right">6</td>
+<td align="right">9</td>
+<td align="right">5</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>4d2 1d12</td>
+</tr>
+
+<tr>
+<td>:</td>
+<td align="right">salamander</td>
+<td align="right">8</td>
+<td align="right">12</td>
+<td align="right">-1</td>
+<td align="right">0</td>
+<td>Fs</td>
+<td>W2d8 1d6F H2d6 H3d6F</td>
+</tr>
+
+<tr>
+<th align="left" colspan="2">SPECIES</th>
+<th><a href="#lev">LEV</a></th>
+<th><a href="#spd">SPD</a></th>
+<th><a href="#ac">AC</a></th>
+<th><a href="#mr">MR</a></th>
+<th><a href="#resists">RESISTS</a></th>
+<th align="left"><a href="#attacks">ATTACKS</a></th>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">archeologist</td>
+<td align="right">10</td>
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">1</td>
+<td>&#160;</td>
+<td>W1d6 W1d6</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">barbarian</td>
+<td align="right">10</td>
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">1</td>
+<td>p</td>
+<td>W1d6 W1d6</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">caveman</td>
+<td align="right">10</td>
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>W2d4</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">cavewoman</td>
+<td align="right">10</td>
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">0</td>
+<td>&#160;</td>
+<td>W2d4</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">healer</td>
+<td align="right">10</td>
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">1</td>
+<td>p</td>
+<td>W1d6</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">knight</td>
+<td align="right">10</td>
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">1</td>
+<td>&#160;</td>
+<td>W1d6 W1d6</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">monk</td>
+<td align="right">10</td>
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">2</td>
+<td>&#160;</td>
+<td>1d8 1d8</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">priest</td>
+<td align="right">10</td>
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">2</td>
+<td>&#160;</td>
+<td>W1d6</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">priestess</td>
+<td align="right">10</td>
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">2</td>
+<td>&#160;</td>
+<td>W1d6</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">ranger</td>
+<td align="right">10</td>
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">2</td>
+<td>&#160;</td>
+<td>W1d4</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">rogue</td>
+<td align="right">10</td>
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">1</td>
+<td>&#160;</td>
+<td>W1d6 W1d6</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">samurai</td>
+<td align="right">10</td>
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">1</td>
+<td>&#160;</td>
+<td>W1d8 W1d8</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">tourist</td>
+<td align="right">10</td>
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">1</td>
+<td>&#160;</td>
+<td>W1d6 W1d6</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">valkyrie</td>
+<td align="right">10</td>
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">1</td>
+<td>c</td>
+<td>W1d8 W1d8</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">wizard</td>
+<td align="right">10</td>
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">3</td>
+<td>&#160;</td>
+<td>W1d6</td>
+</tr>
+
+<tr>
+<th align="left" colspan="2">SPECIES</th>
+<th><a href="#lev">LEV</a></th>
+<th><a href="#spd">SPD</a></th>
+<th><a href="#ac">AC</a></th>
+<th><a href="#mr">MR</a></th>
+<th><a href="#resists">RESISTS</a></th>
+<th align="left"><a href="#attacks">ATTACKS</a></th>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">Lord Carnarvon</td>
+<td align="right">20</td>
+<td align="right">12</td>
+<td align="right">0</td>
+<td align="right">30</td>
+<td>&#160;</td>
+<td>W1d6</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">Pelias</td>
+<td align="right">20</td>
+<td align="right">12</td>
+<td align="right">0</td>
+<td align="right">30</td>
+<td>p</td>
+<td>W1d6</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">Shaman Karnov</td>
+<td align="right">20</td>
+<td align="right">12</td>
+<td align="right">0</td>
+<td align="right">30</td>
+<td>&#160;</td>
+<td>W2d4</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">Hippocrates</td>
+<td align="right">20</td>
+<td align="right">12</td>
+<td align="right">0</td>
+<td align="right">40</td>
+<td>p</td>
+<td>W1d6</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">King Arthur</td>
+<td align="right">20</td>
+<td align="right">12</td>
+<td align="right">0</td>
+<td align="right">40</td>
+<td>&#160;</td>
+<td>W1d6 W1d6</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">Grand Master</td>
+<td align="right">25</td>
+<td align="right">12</td>
+<td align="right">0</td>
+<td align="right">70</td>
+<td>fsep</td>
+<td>4d10 2d8 M2d8+ M2d8+</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">Arch Priest</td>
+<td align="right">25</td>
+<td align="right">12</td>
+<td align="right">7</td>
+<td align="right">70</td>
+<td>fsep</td>
+<td>W4d10 2d8 M2d8+ M2d8+</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">Orion</td>
+<td align="right">20</td>
+<td align="right">12</td>
+<td align="right">0</td>
+<td align="right">30</td>
+<td>&#160;</td>
+<td>W1d6</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">Master of Thieves</td>
+<td align="right">20</td>
+<td align="right">12</td>
+<td align="right">0</td>
+<td align="right">30</td>
+<td>*</td>
+<td>W2d6 W2d6 2d4-</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">Lord Sato</td>
+<td align="right">20</td>
+<td align="right">12</td>
+<td align="right">0</td>
+<td align="right">30</td>
+<td>&#160;</td>
+<td>W1d8 W1d6</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">Twoflower</td>
+<td align="right">20</td>
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">20</td>
+<td>&#160;</td>
+<td>W1d6 W1d6</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">Norn</td>
+<td align="right">20</td>
+<td align="right">12</td>
+<td align="right">0</td>
+<td align="right">80</td>
+<td>c</td>
+<td>W1d8 W1d6</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">Neferet the Green</td>
+<td align="right">20</td>
+<td align="right">12</td>
+<td align="right">0</td>
+<td align="right">60</td>
+<td>&#160;</td>
+<td>W1d6 M2d8+</td>
+</tr>
+
+<tr>
+<td>&amp;</td>
+<td align="right">Minion of Huhetotl</td>
+<td align="right">16</td>
+<td align="right">12</td>
+<td align="right">-2</td>
+<td align="right">75</td>
+<td>fp*</td>
+<td>W8d4 W4d6 M0d0+ 2d6-</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">Thoth Amon</td>
+<td align="right">16</td>
+<td align="right">12</td>
+<td align="right">0</td>
+<td align="right">10</td>
+<td>p*</td>
+<td>W1d6 M0d0+ M0d0+ 1d4-</td>
+</tr>
+
+<tr>
+<td>D</td>
+<td align="right">Chromatic Dragon</td>
+<td align="right">16</td>
+<td align="right">12</td>
+<td align="right">0</td>
+<td align="right">30</td>
+<td>FCSDEPa*</td>
+<td>B6d8z M0d0+ 2d8- 4d8 4d8 1d6</td>
+</tr>
+
+<tr>
+<td>H</td>
+<td align="right">Cyclops</td>
+<td align="right">18</td>
+<td align="right">12</td>
+<td align="right">0</td>
+<td align="right">0</td>
+<td>*</td>
+<td>W4d8 W4d8 2d6-</td>
+</tr>
+
+<tr>
+<td>D</td>
+<td align="right">Ixoth</td>
+<td align="right">15</td>
+<td align="right">12</td>
+<td align="right">-1</td>
+<td align="right">20</td>
+<td>F*</td>
+<td>B8d6F 4d8 M0d0+ 2d4 2d4-</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">Master Kaen</td>
+<td align="right">25</td>
+<td align="right">12</td>
+<td align="right">-10</td>
+<td align="right">10</td>
+<td>P*</td>
+<td>16d2 16d2 M0d0+ 1d4-</td>
+</tr>
+
+<tr>
+<td>&amp;</td>
+<td align="right">Nalzok</td>
+<td align="right">16</td>
+<td align="right">12</td>
+<td align="right">-2</td>
+<td align="right">85</td>
+<td>fp*</td>
+<td>W8d4 W4d6 M0d0+ 2d6-</td>
+</tr>
+
+<tr>
+<td>s</td>
+<td align="right">Scorpius</td>
+<td align="right">15</td>
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">0</td>
+<td>P*</td>
+<td>2d6 2d6- 1d4#</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">Master Assassin</td>
+<td align="right">15</td>
+<td align="right">12</td>
+<td align="right">0</td>
+<td align="right">30</td>
+<td>*</td>
+<td>W2d6P W2d8 2d6-</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">Ashikaga Takauji</td>
+<td align="right">15</td>
+<td align="right">12</td>
+<td align="right">0</td>
+<td align="right">40</td>
+<td>*</td>
+<td>W2d6 W2d6 2d6-</td>
+</tr>
+
+<tr>
+<td>H</td>
+<td align="right">Lord Surtur</td>
+<td align="right">15</td>
+<td align="right">12</td>
+<td align="right">2</td>
+<td align="right">50</td>
+<td>F*</td>
+<td>W2d10 W2d10 2d6-</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">Dark One</td>
+<td align="right">15</td>
+<td align="right">12</td>
+<td align="right">0</td>
+<td align="right">80</td>
+<td>*</td>
+<td>W1d6 W1d6 1d4- M0d0+</td>
+</tr>
+
+<tr>
+<th align="left" colspan="2">SPECIES</th>
+<th><a href="#lev">LEV</a></th>
+<th><a href="#spd">SPD</a></th>
+<th><a href="#ac">AC</a></th>
+<th><a href="#mr">MR</a></th>
+<th><a href="#resists">RESISTS</a></th>
+<th align="left"><a href="#attacks">ATTACKS</a></th>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">student</td>
+<td align="right">5</td>
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">10</td>
+<td>&#160;</td>
+<td>W1d6</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">chieftain</td>
+<td align="right">5</td>
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">10</td>
+<td>p</td>
+<td>W1d6</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">neanderthal</td>
+<td align="right">5</td>
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">10</td>
+<td>&#160;</td>
+<td>W2d4</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">attendant</td>
+<td align="right">5</td>
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">10</td>
+<td>p</td>
+<td>W1d6</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">page</td>
+<td align="right">5</td>
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">10</td>
+<td>&#160;</td>
+<td>W1d6 W1d6</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">abbot</td>
+<td align="right">5</td>
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">20</td>
+<td>&#160;</td>
+<td>8d2 3d2s M0d0+</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">acolyte</td>
+<td align="right">5</td>
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">20</td>
+<td>&#160;</td>
+<td>W1d6 M0d0+</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">hunter</td>
+<td align="right">5</td>
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">10</td>
+<td>&#160;</td>
+<td>W1d4</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">thug</td>
+<td align="right">5</td>
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">10</td>
+<td>&#160;</td>
+<td>W1d6 W1d6</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">ninja</td>
+<td align="right">5</td>
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">10</td>
+<td>&#160;</td>
+<td>W1d8 W1d8</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">roshi</td>
+<td align="right">5</td>
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">10</td>
+<td>&#160;</td>
+<td>W1d8 W1d8</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">guide</td>
+<td align="right">5</td>
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">20</td>
+<td>&#160;</td>
+<td>W1d6 M0d0+</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">warrior</td>
+<td align="right">5</td>
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">10</td>
+<td>&#160;</td>
+<td>W1d8 W1d8</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td align="right">apprentice</td>
+<td align="right">5</td>
+<td align="right">12</td>
+<td align="right">10</td>
+<td align="right">30</td>
+<td>&#160;</td>
+<td>W1d6 M0d0+</td>
+</tr>
+</table>
+
+<p><a id="lev" name="lev"></a>This file was originally
+automatically generated. LEV is the base experience level (hit
+dice) of the monster; a value of 50 or greater means the monster
+will have 2*(LEV-6) hit points. <a id="spd" name="spd"></a>SPD is
+the monster's speed, from 1 (slowest) to 36 (fastest), where a
+human has a normal speed of 12. <a id="ac" name="ac"></a><a id="mr"
+name="mr"></a>AC is the armor class and MR is the base magic
+resistance saving throw percentage.</p>
+
+<p><a id="resists" name="resists"></a>RESISTS lists monster
+resistances and conveyances. Lowercase letters mean that the
+monster is itself resistant to the attack; uppercase letters mean
+that eating the corpse may also convey the resistance to the
+player.</p>
+
+<table summary="Monster resistances and conveyances" border="1"
+cellpadding="7">
+<tr>
+<td>F</td>
+<td>Fire</td>
+</tr>
+
+<tr>
+<td>C</td>
+<td>Cold</td>
+</tr>
+
+<tr>
+<td>S</td>
+<td>Sleep</td>
+</tr>
+
+<tr>
+<td>D</td>
+<td>Disintegration (NOT death)</td>
+</tr>
+
+<tr>
+<td>E</td>
+<td>Electric shock</td>
+</tr>
+
+<tr>
+<td>P</td>
+<td>Poison</td>
+</tr>
+
+<tr>
+<td>A</td>
+<td>Acid</td>
+</tr>
+
+<tr>
+<td>*</td>
+<td>Stoning</td>
+</tr>
+</table>
+
+<p><a id="attacks" name="attacks"></a>ATTACKS lists each of the
+monster's attacks. The prefix letter, if any, specifies how the
+attack is made:</p>
+
+<table summary="Monster Attack Symbols: How Attack Made" border="1"
+cellpadding="7">
+<tr>
+<td>&#160;</td>
+<td>No letter means a direct attack</td>
+</tr>
+
+<tr>
+<td>B</td>
+<td>Breath</td>
+</tr>
+
+<tr>
+<td>E</td>
+<td>Engulf</td>
+</tr>
+
+<tr>
+<td>G</td>
+<td>Gaze</td>
+</tr>
+
+<tr>
+<td>H</td>
+<td>Hugging or crushing</td>
+</tr>
+
+<tr>
+<td>M</td>
+<td>Magic (spell)</td>
+</tr>
+
+<tr>
+<td>S</td>
+<td>Spit</td>
+</tr>
+
+<tr>
+<td>W</td>
+<td>Uses weapon</td>
+</tr>
+
+<tr>
+<td>X</td>
+<td>Explodes</td>
+</tr>
+
+<tr>
+<td>()</td>
+<td>Defensive response when the monster is attacked</td>
+</tr>
+
+<tr>
+<td>[]</td>
+<td>Defensive response when the monster is killed</td>
+</tr>
+</table>
+
+<p>A suffix letter, if any, specifies the type of damage:</p>
+
+<table summary="Monster Attack Symbols: Type of Damage" border="1"
+cellpadding="7">
+<tr>
+<td>&#160;</td>
+<td>No letter means normal physical damage</td>
+</tr>
+
+<tr>
+<td>A</td>
+<td>Acid</td>
+</tr>
+
+<tr>
+<td>C</td>
+<td>Cold</td>
+</tr>
+
+<tr>
+<td>D</td>
+<td>Disintegration (NOT death)</td>
+</tr>
+
+<tr>
+<td>E</td>
+<td>Electric shock</td>
+</tr>
+
+<tr>
+<td>F</td>
+<td>Fire</td>
+</tr>
+
+<tr>
+<td>H</td>
+<td>Heal</td>
+</tr>
+
+<tr>
+<td>M</td>
+<td>Magic missiles</td>
+</tr>
+
+<tr>
+<td>P</td>
+<td>Poison (drains strength)</td>
+</tr>
+
+<tr>
+<td>R</td>
+<td>Rust or corrode metal</td>
+</tr>
+
+<tr>
+<td>S</td>
+<td>Sleep</td>
+</tr>
+
+<tr>
+<td>V</td>
+<td>Drain level</td>
+</tr>
+
+<tr>
+<td>b</td>
+<td>Blind (no physical damage)</td>
+</tr>
+
+<tr>
+<td>c</td>
+<td>Confuse (no physical damage)</td>
+</tr>
+
+<tr>
+<td>d</td>
+<td>Digest</td>
+</tr>
+
+<tr>
+<td>e</td>
+<td>Drain magic energy (no physical damage)</td>
+</tr>
+
+<tr>
+<td>h</td>
+<td>Hallucination</td>
+</tr>
+
+<tr>
+<td>i</td>
+<td>Remove intrinsic</td>
+</tr>
+
+<tr>
+<td>m</td>
+<td>Stick to you</td>
+</tr>
+
+<tr>
+<td>r</td>
+<td>Rot organics</td>
+</tr>
+
+<tr>
+<td>s</td>
+<td>Stun</td>
+</tr>
+
+<tr>
+<td>t</td>
+<td>Teleport you</td>
+</tr>
+
+<tr>
+<td>w</td>
+<td>Wrap and drown you</td>
+</tr>
+
+<tr>
+<td>x</td>
+<td>Prick legs</td>
+</tr>
+
+<tr>
+<td>z</td>
+<td>Special monster attack (see <a href="#note">note</a>)</td>
+</tr>
+
+<tr>
+<td>.</td>
+<td>Paralyse</td>
+</tr>
+
+<tr>
+<td>+</td>
+<td>Cast spell (magical or clerical)</td>
+</tr>
+
+<tr>
+<td>-</td>
+<td>Steal something</td>
+</tr>
+
+<tr>
+<td>"</td>
+<td>Disenchant something</td>
+</tr>
+
+<tr>
+<td>&amp;</td>
+<td>Seduce and disrobe you</td>
+</tr>
+
+<tr>
+<td>&lt;</td>
+<td>Slow</td>
+</tr>
+
+<tr>
+<td>!</td>
+<td>Drain ability (C - CON, D - DEX, I - INT)</td>
+</tr>
+
+<tr>
+<td>#</td>
+<td>Disease (see <a href="#note">note</a>)</td>
+</tr>
+
+<tr>
+<td>$</td>
+<td>Steal gold</td>
+</tr>
+
+<tr>
+<td>*</td>
+<td>Turn to stone</td>
+</tr>
+
+<tr>
+<td>@</td>
+<td>Lycanthropy or turn to slime</td>
+</tr>
+</table>
+
+<p><a id="note" name="note"></a> Note that if a monster has two
+disease, pestilence or famine attacks, no more than one will be
+effective in a given turn; if the first is successful, the second
+is converted to a stun attack instead.</p>
+
+<h3>Acknowledgements</h3>
+
+<p>Corrections and clarifications provided by Big Al, Bruce Cox and
+Kate Nepveu.</p>
+
+<hr />
+<p><a href="index.html">Up to the NetHack Page</a></p>
+</body>
+</html>
+

@@ -1,0 +1,880 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>Eating Corpses For Food And Intrinsics</title>
+<link rel="stylesheet" href="../stylesheet.css" type="text/css">
+<style type="text/css">
+<!--
+th {font: 10pt Arial, sans-serif; font-weight: bold}
+-->
+</style>
+</head>
+<body>
+<!-- following code added by server. PLEASE REMOVE -->
+<link href="http://us.geocities.com/js_source/div.css" rel="stylesheet" type="text/css"><script language="JavaScript" src="http://us.geocities.com/js_source/div03.js"></script>
+<!-- preceding code added by server. PLEASE REMOVE -->
+<h1>Eating Corpses For Food And Intrinsics</h1>
+Based on the table by Catherine Darrow.<br>
+Compiled for NetHack 3.4.3 by David Corbett.<br>
+Last changed 7 July, 2004.<br>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#TABLE1">Table of monsters and intrinsics</a>
+<li><a href="#EFFECT">Effects of eating corpses</a>
+<ul><li><a href="#INITIAL">Initial effects</a>
+<li><a href="#FINAL">Final effects</a>
+<li><a href="#INTRIN">Intrinsics</a></ul>
+<li><a href="#OLD">Old and tainted corpses, and food poisoning</a>
+<li><a href="#TABLE2">Monsters not leaving corpses</a>
+</ul>
+
+<P>This spoiler details the nutrition, intrinsics and other effects of eating corpses.</P>
+
+<h2><a name="TABLE1">Table of monsters and intrinsics </a></h2>    
+
+<TABLE BORDER="1" cellspacing="3" cellpadding="4">    
+
+<tr><th>Name</th> <th>Nutrition</th> <th><a href="#INITIAL">Initial effects</a></th><th><a href="#FINAL">Final effects</a></th><th><a href="#INTRIN">Intrinsics</a></th></tr>
+    
+<tr><td>abbot</td> <td>400</td> <td>Human</td> <td>Hallucination</td> <td>&nbsp;</td></tr>
+
+<tr><td>acid blob</td> <td>10   V!</td> <td>Acidic</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>acolyte</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>aligned priest</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>ape</td> <td>500</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>apprentice</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>Arch Priest</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>archeologist</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>attendant</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>baby black dragon</td> <td>500</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>baby blue dragon</td> <td>500</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>baby crocodile</td> <td>200</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>baby gray dragon</td> <td>500</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>baby green dragon</td> <td>500</td> <td>Poisonous</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>baby long worm</td> <td>250</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>baby orange dragon</td> <td>500</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>baby purple worm</td> <td>250</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>baby red dragon</td> <td>500</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>baby silver dragon</td> <td>500</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>baby white dragon</td> <td>500</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>baby yellow dragon</td> <td>500</td> <td>Acidic</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>baluchitherium</td> <td>800</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>barbarian</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><th>Name</th> <th>Nutrition</th> <th><a href="#INITIAL">Initial effects</a></th><th><a href="#FINAL">Final effects</a></th><th><a href="#INTRIN">Intrinsics</a></th></tr>
+    
+<tr><td>bat</td> <td>20</td> <td>&nbsp;</td> <td>Stun (30)</td> <td>&nbsp;</td></tr>
+
+<tr><td>black dragon</td> <td>1500</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>Disintegration: 100%</td></tr>
+
+<tr><td>black naga</td> <td>400</td> <td>Acidic</td> <td>&nbsp;</td> <td>Poison: 53%</td></tr>
+
+<tr><td>black naga hatchling</td> <td>100</td> <td>Acidic</td> <td>&nbsp;</td> <td>Poison: 20%</td></tr>
+
+<tr><td>black pudding</td> <td>250</td> <td>Acidic</td> <td>&nbsp;</td> <td>Cold: 22%, Shock: 22%, Poison: 22%</td></tr>
+
+<tr><td>black unicorn</td> <td>300</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>Poison: 27%</td></tr>
+
+<tr><td>blue dragon</td> <td>1500</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>Shock: 100%</td></tr>
+
+<tr><td>blue jelly</td> <td>20   V!</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>Cold: 13%, Poison: 13%</td></tr>
+
+<tr><td>brown mold</td> <td>30   V!</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>Cold: 3%, Poison: 3%</td></tr>
+
+<tr><td>brown pudding</td> <td>250 V</td> <td>Acidic</td> <td>&nbsp;</td> <td>Cold: 11%, Shock: 11%, Poison: 11%</td></tr>
+
+<tr><td>bugbear</td> <td>250</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>captain</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>carnivorous ape</td> <td>550</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>cave spider</td> <td>50</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>Poison: 7%</td></tr>
+
+<tr><td>caveman</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>cavewoman</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>centipede</td> <td>50</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>Poison: 13%</td></tr>
+
+<tr><td>chameleon</td> <td>100</td> <td>&nbsp;</td> <td>Polymorph</td> <td>&nbsp;</td></tr>
+
+<tr><td>chickatrice</td> <td>10</td> <td>Petrify</td> <td>&nbsp;</td> <td>Poison: 27%</td></tr>
+
+<tr><td>chieftain</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>Chromatic Dragon</td> <td>1700</td> <td>Poisonous</td> <td>&nbsp;</td> <td>Fire: 17%, Cold: 17%, Sleep: 17%, Shock: 17%, Poison: 17%, Disintegration: 17%</td></tr>
+
+<tr><td>cobra</td> <td>100</td> <td>Poisonous</td> <td>&nbsp;</td> <td>Poison: 40%</td></tr>
+
+<tr><td>cockatrice</td> <td>30</td> <td>Petrify</td> <td>&nbsp;</td> <td>Poison: 33%</td></tr>
+
+<tr><th>Name</th> <th>Nutrition</th> <th><a href="#INITIAL">Initial effects</a></th><th><a href="#FINAL">Final effects</a></th><th><a href="#INTRIN">Intrinsics</a></th></tr>
+    
+<tr><td>coyote</td> <td>250</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>crocodile</td> <td>400</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>Croesus</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>Cyclops</td> <td>700</td> <td>&nbsp;</td> <td>Strength</td> <td>&nbsp;</td></tr>
+
+<tr><td>Death</td> <td>1</td> <td>DIE</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>dingo</td> <td>200</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>disenchanter</td> <td>200</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>dog</td> <td>200</td> <td>Aggravate</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>doppelganger</td> <td>400</td> <td>Human</td> <td>Polymorph</td> <td>&nbsp;</td></tr>
+
+<tr><td>dwarf</td> <td>300</td> <td>Dwarf</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>dwarf king</td> <td>300</td> <td>Dwarf</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>dwarf lord</td> <td>300</td> <td>Dwarf</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>electric eel</td> <td>250</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>Shock: 47%</td></tr>
+
+<tr><td>elf</td> <td>350</td> <td>Elf</td> <td>&nbsp;</td> <td>Sleep: 67%</td></tr>
+
+<tr><td>elf-lord</td> <td>350</td> <td>Elf</td> <td>&nbsp;</td> <td>Sleep: 53%</td></tr>
+
+<tr><td>Elvenking</td> <td>350</td> <td>Elf</td> <td>&nbsp;</td> <td>Sleep: 60%</td></tr>
+
+<tr><td><a name="ETTIN">ettin</a></td> <td>500</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>Famine</td> <td>1</td> <td>DIE</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>fire ant</td> <td>10</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>Fire: 20%</td></tr>
+
+<tr><td>fire giant</td> <td>750</td> <td>&nbsp;</td> <td>Strength</td> <td>Fire: 30%</tr>
+
+<tr><td>flesh golem</td> <td>600</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>Fire: 12%, Cold: 12%, Sleep: 12%, Shock: 12%, Poison: 12%</td></tr>
+
+<tr><td>floating eye</td> <td>10</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>Telepathy: 100%</td></tr>
+
+<tr><th>Name</th> <th>Nutrition</th> <th><a href="#INITIAL">Initial effects</a></th><th><a href="#FINAL">Final effects</a></th><th><a href="#INTRIN">Intrinsics</a></th></tr>
+    
+<tr><td>forest centaur</td> <td>600</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>fox</td> <td>250</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>frost giant</td> <td>750</td> <td>&nbsp;</td> <td>Strength</td> <td>Cold: 33%</td></tr>
+
+<tr><td>gargoyle</td> <td>200</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>garter snake</td> <td>60</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>gecko</td> <td>20</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>gelatinous cube</td> <td>150  V!</td> <td>Acidic</td> <td>&nbsp;</td> <td>Fire: 10%, Cold: 10%, Sleep: 10%, Shock: 10%</td></tr>
+
+<tr><td>giant</td> <td>750</td> <td>&nbsp;</td> <td>Strength</td> <td>&nbsp;</td></tr>
+
+<tr><td>giant ant</td> <td>10</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>giant bat</td> <td>30</td> <td>&nbsp;</td> <td>Stun (60)</td> <td>&nbsp;</td></tr>
+
+<tr><td>giant beetle</td> <td>10</td> <td>Poisonous</td> <td>&nbsp;</td> <td>Poison: 33%</td></tr>
+
+<tr><td>giant eel</td> <td>250</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>giant mimic</td> <td>500</td> <td>&nbsp;</td> <td>Mimic (50)</td> <td>&nbsp;</td></tr>
+
+<tr><td>giant rat</td> <td>30</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>giant spider</td> <td>100</td> <td>Poisonous</td> <td>&nbsp;</td> <td>Poison: 33%</td></tr>
+
+<tr><td>glass piercer</td> <td>300</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>gnome</td> <td>100</td> <td>Gnome</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>gnome king</td> <td>150</td> <td>Gnome</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>gnome lord</td> <td>120</td> <td>Gnome</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>gnomish wizard</td> <td>120</td> <td>Gnome</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>goblin</td> <td>100</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>golden naga</td> <td>400</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>Poison: 67%</td></tr>
+
+<tr><th>Name</th> <th>Nutrition</th> <th><a href="#INITIAL">Initial effects</a></th><th><a href="#FINAL">Final effects</a></th><th><a href="#INTRIN">Intrinsics</a></th></tr>
+    
+<tr><td>golden naga hatchling</td> <td>100</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>Poison: 20%</td></tr>
+
+<tr><td>Grand Master</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>gray dragon</td> <td>1500</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>gray ooze</td> <td>250 V</td> <td>Acidic</td> <td>&nbsp;</td> <td>Fire: 7%, Cold: 7%, Poison: 7%</td></tr>
+
+<tr><td>gray unicorn</td> <td>300</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>Poison: 27%</td></tr>
+
+<tr><td>green dragon</td> <td>1500</td> <td>Poisonous</td> <td>&nbsp;</td> <td>Poison: 100%</td></tr>
+
+<tr><td>green mold</td> <td>30   V!</td> <td>Acidic</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>green slime</td> <td>150 V</td> <td>Slime, Poisonous, Acidic</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>Green-elf</td> <td>350</td> <td>Elf</td> <td>&nbsp;</td> <td>Sleep: 33%</td></tr>
+
+<tr><td>gremlin</td> <td>20</td> <td>Poisonous</td> <td>&nbsp;</td> <td>Poison: 33%</td></tr>
+
+<tr><td>Grey-elf</td> <td>350</td> <td>Elf</td> <td>&nbsp;</td> <td>Sleep: 40%</td></tr>
+
+<tr><td>guard</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>guardian naga</td> <td>400</td> <td>Poisonous</td> <td>&nbsp;</td> <td>Poison: 80%</td></tr>
+
+<tr><td>guardian naga hatchling</td> <td>100</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>Poison: 20%</td></tr>
+
+<tr><td>guide</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>healer</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>hell hound</td> <td>300</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>Fire: 80%</td></tr>
+
+<tr><td>hell hound pup</td> <td>200</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>Fire: 47%</td></tr>
+
+<tr><td>high priest</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>hill giant</td> <td>700</td> <td>&nbsp;</td> <td>Strength</td> <td>&nbsp;</td></tr>
+
+<tr><td>hill orc</td> <td>200</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><th>Name</th> <th>Nutrition</th> <th><a href="#INITIAL">Initial effects</a></th><th><a href="#FINAL">Final effects</a></th><th><a href="#INTRIN">Intrinsics</a></th></tr>
+    
+<tr><td>Hippocrates</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>hobbit</td> <td>200</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>hobgoblin</td> <td>200</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>homunculus</td> <td>100</td> <td>Poisonous</td> <td>&nbsp;</td> <td>Sleep: 7%, Poison: 7%</td></tr>
+
+<tr><td>horse</td> <td>300</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>housecat</td> <td>200</td> <td>Aggravate</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>human</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>hunter</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>ice troll</td> <td>300</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>Cold: 60%</td></tr>
+
+<tr><td>iguana</td> <td>30</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>imp</td> <td>10</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>iron piercer</td> <td>300</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>Ixoth</td> <td>1600</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>Fire: 100%</td></tr>
+
+<tr><td>jabberwock</td> <td>600</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>jackal</td> <td>250</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>jaguar</td> <td>300</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>jellyfish</td> <td>20</td> <td>Poisonous</td> <td>&nbsp;</td> <td>Poison: 20%</td></tr>
+
+<tr><td>Keystone Kop</td> <td>200</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>killer bee</td> <td>5</td> <td>Poisonous</td> <td>&nbsp;</td> <td>Poison: 30%</td></tr>
+
+<tr><td>King Arthur</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>kitten</td> <td>150</td> <td>Aggravate</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>knight</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><th>Name</th> <th>Nutrition</th> <th><a href="#INITIAL">Initial effects</a></th><th><a href="#FINAL">Final effects</a></th><th><a href="#INTRIN">Intrinsics</a></th></tr>
+    
+<tr><td>kobold</td> <td>100</td> <td>Poisonous</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>kobold lord</td> <td>200</td> <td>Poisonous</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>kobold shaman</td> <td>150</td> <td>Poisonous</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>Kop Kaptain</td> <td>200</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>Kop Lieutenant</td> <td>200</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>Kop Sergeant</td> <td>200</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>kraken</td> <td>1000</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>large cat</td> <td>250</td> <td>Aggravate</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>large dog</td> <td>250</td> <td>Aggravate</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>large kobold</td> <td>150</td> <td>Poisonous</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>large mimic</td> <td>400</td> <td>&nbsp;</td> <td>Mimic (40)</td> <td>&nbsp;</td></tr>
+
+<tr><td>leocrotta</td> <td>500</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>leprechaun</td> <td>30</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>Teleportitis: 50%</td></tr>
+
+<tr><td>lichen</td> <td>200  V!</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>lieutenant</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>little dog</td> <td>150</td> <td>Aggravate</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>lizard</td> <td>40</td> <td>Cure stoning</td> <td>Reduce stunning, confusion</td> <td>&nbsp;</td></tr>
+
+<tr><td>long worm</td> <td>500</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>Lord Carnarvon</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>Lord Sato</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>Lord Surtur</td> <td>850</td> <td>&nbsp;</td> <td>Strength</td> <td>Fire: 50%</td></tr>
+
+<tr><th>Name</th> <th>Nutrition</th> <th><a href="#INITIAL">Initial effects</a></th><th><a href="#FINAL">Final effects</a></th><th><a href="#INTRIN">Intrinsics</a></th></tr>
+    
+<tr><td>lurker above</td> <td>350</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>lynx</td> <td>300</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>Master Assassin</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>Master Kaen</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>Poison: 100%</td></tr>
+
+<tr><td>master mind flayer</td> <td>400</td> <td>&nbsp;</td> <td>Intelligence: 50%</td> <td>Telepathy: (if no Intelligence gain)</td></tr>
+
+<tr><td>Master of Thieves</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>mastodon</td> <td>800</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>Medusa</td> <td>400</td> <td>Petrify, Poisonous</td> <td>&nbsp;</td> <td>Poison: 100%</td></tr>
+
+<tr><td>mind flayer</td> <td>400</td> <td>&nbsp;</td> <td>Intelligence: 50%</td> <td>Telepathy: (if no Intelligence gain)</td></tr>
+
+<tr><td>minotaur</td> <td>700</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>monk</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>monkey</td> <td>50</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>Mordor orc</td> <td>200</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>mountain centaur</td> <td>500</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>mountain nymph</td> <td>300</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>Teleportitis: 30%</td></tr>
+
+<tr><td>mumak</td> <td>500</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>neanderthal</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>Neferet the Green</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>newt</td> <td>20</td> <td>&nbsp;</td> <td>Energy: 67%</td> <td>&nbsp;</td></tr>
+
+<tr><td>ninja</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>Norn</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>nurse</td> <td>400</td> <td>Human</td> <td>Heal</td> <td>Poison: 73%</td></tr>
+
+<tr><th>Name</th> <th>Nutrition</th> <th><a href="#INITIAL">Initial effects</a></th><th><a href="#FINAL">Final effects</a></th><th><a href="#INTRIN">Intrinsics</a></th></tr>
+    
+<tr><td>ochre jelly</td> <td>20   V!</td> <td>Acidic</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>ogre</td> <td>500</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>ogre king</td> <td>750</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>ogre lord</td> <td>700</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>Olog-hai</td> <td>400</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>Oracle</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>orange dragon</td> <td>1500</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>Sleep: 100%</td></tr>
+
+<tr><td><a name="ORC">orc</a></td> <td>150</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>orc shaman</td> <td>300</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>orc-captain</td> <td>350</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>Orion</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>owlbear</td> <td>700</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>page</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>panther</td> <td>300</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>Pelias</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>Pestilence</td> <td>1</td> <td>DIE</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>piranha</td> <td>30</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>pit viper</td> <td>60</td> <td>Poisonous</td> <td>&nbsp;</td> <td>Poison: 40%</td></tr>
+
+<tr><td>plains centaur</td> <td>500</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>pony</td> <td>250</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>priest</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>priestess</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>prisoner</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><th>Name</th> <th>Nutrition</th> <th><a href="#INITIAL">Initial effects</a></th><th><a href="#FINAL">Final effects</a></th><th><a href="#INTRIN">Intrinsics</a></th></tr>
+    
+<tr><td>purple worm</td> <td>700</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>pyrolisk</td> <td>30</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>Fire: 20%, Poison: 20%</td></tr>
+
+<tr><td>python</td> <td>100</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>quantum mechanic</td> <td>20</td> <td>Poisonous</a></td> <td>&nbsp;</td> <td>Speed Toggle</tr>
+
+<tr><td>quasit</td> <td>200</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>Poison: 20%</td></tr>
+
+<tr><td>queen bee</td> <td>5</td> <td>Poisonous</td> <td>&nbsp;</td> <td>Poison: 60%</td></tr>
+
+<tr><td>quivering blob</td> <td>100  V!</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>Poison: 33%</td></tr>
+
+<tr><td>rabid rat</td> <td>5</td> <td>Poisonous</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>ranger</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>raven</td> <td>20</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>red dragon</td> <td>1500</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>Fire: 100%</td></tr>
+
+<tr><td>red mold</td> <td>30   V!</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>Fire: 3%, Poison: 3%</td></tr>
+
+<tr><td>red naga</td> <td>400</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>Fire: 20%, Poison: 20%</td></tr>
+
+<tr><td>red naga hatchling</td> <td>100</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>Fire: 10%, Poison: 10%</td></tr>
+
+<tr><td>rock mole</td> <td>30</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>rock piercer</td> <td>200</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>rock troll</td> <td>300</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>rogue</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>roshi</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>rothe</td> <td>100</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>rust monster</td> <td>250</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>salamander</td> <td>400</td> <td>Poisonous</td> <td>&nbsp;</td> <td>Fire: 53%</td></tr>
+
+<tr><td>samurai</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><th>Name</th> <th>Nutrition</th> <th><a href="#INITIAL">Initial effects</a></th><th><a href="#FINAL">Final effects</a></th><th><a href="#INTRIN">Intrinsics</a></th></tr>
+    
+<tr><td>sasquatch</td> <td>750</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>scorpion</td> <td>100</td> <td>Poisonous</td> <td>&nbsp;</td> <td>Poison: 50%</td></tr>
+
+<tr><td>Scorpius</td> <td>350</td> <td>Poisonous</td> <td>&nbsp;</td> <td>Poison: 100%</td></tr>
+
+<tr><td>sergeant</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>sewer rat</td> <td>12</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>Shaman Karnov</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>shark</td> <td>350</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>shopkeeper</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>shrieker</td> <td>100  V!</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>Poison: 20%</td></tr>
+
+<tr><td>silver dragon</td> <td>1500</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>small mimic</td> <td>200</td> <td>&nbsp;</td> <td>Mimic (20)</td> <td>&nbsp;</td></tr>
+
+<tr><td>snake</td> <td>80</td> <td>Poisonous</td> <td>&nbsp;</td> <td>Poison: 27%</td></tr>
+
+<tr><td>soldier</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>soldier ant</td> <td>5</td> <td>Poisonous</td> <td>&nbsp;</td> <td>Poison: 20%</td></tr>
+
+<tr><td>spotted jelly</td> <td>20   V!</td> <td>Acidic</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>stalker</td> <td>400</td> <td>&nbsp;</td> <td>Stun (60)</td> <td>Invisibility</td></tr>
+
+<tr><td>stone giant</td> <td>750</td> <td>&nbsp;</td> <td>Strength</td> <td>&nbsp;</td></tr>
+
+<tr><td>storm giant</td> <td>750</td> <td>&nbsp;</td> <td>Strength</td> <td>Shock: 50%</td></tr>
+
+<tr><td>student</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>tengu</td> <td>200</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>Poison: 13%, Teleportitis: 20%, Teleport control: 17%</td></tr>
+
+<tr><td>thug</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>tiger</td> <td>300</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>titan</td> <td>900</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>titanothere</td> <td>650</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><th>Name</th> <th>Nutrition</th> <th><a href="#INITIAL">Initial effects</a></th><th><a href="#FINAL">Final effects</a></th><th><a href="#INTRIN">Intrinsics</a></th></tr>
+    
+<tr><td>tourist</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>trapper</td> <td>350</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>troll</td> <td>350</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>Twoflower</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>umber hulk</td> <td>500</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>Uruk-hai</td> <td>300</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>valkyrie</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>vampire bat</td> <td>20</td> <td>Poisonous</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>violet fungus</td> <td>100  V!</td> <td>&nbsp;</td> <td>Hallucination</td> <td>Poison: 20%</td></tr>
+
+<tr><td>warg</td> <td>350</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>warhorse</td> <td>350</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>warrior</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>watch captain</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>watchman</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>water moccasin</td> <td>80</td> <td>Poisonous</td> <td>&nbsp;</td> <td>Poison: 27%</td></tr>
+
+<tr><td>water nymph</td> <td>300</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>Teleportitis: 30%</td></tr>
+
+<tr><td>water troll</td> <td>350</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>werejackal</td> <td>400</td> <td>Human, Poisonous</td> <td>&nbsp;</td> <td>Lycanthropy: 100%</td></tr>
+
+<tr><td>wererat</td> <td>400</td> <td>Human, Poisonous</td> <td>&nbsp;</td> <td>Lycanthropy: 100%</td></tr>
+
+<tr><td>werewolf</td> <td>400</td> <td>Human, Poisonous</td> <td>&nbsp;</td> <td>Lycanthropy: 100%</td></tr>
+
+<tr><td>white dragon</td> <td>1500</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>Cold: 100%</td></tr>
+
+<tr><td>white unicorn</td> <td>300</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>Poison: 27%</td></tr>
+
+<tr><th>Name</th> <th>Nutrition</th> <th><a href="#INITIAL">Initial effects</a></th><th><a href="#FINAL">Final effects</a></th><th><a href="#INTRIN">Intrinsics</a></th></tr>
+    
+<tr><td>winged gargoyle</td> <td>300</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>winter wolf</td> <td>300</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>Cold: 47%</td></tr>
+
+<tr><td>winter wolf cub</td> <td>200</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>Cold: 33%</td></tr>
+
+<tr><td>wizard</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>Wizard of Yendor</td> <td>400</td> <td>Human</td> <td>&nbsp;</td> <td>Fire: 25%, Poison: 25%, Teleportitis: 25%, Teleport control: 25%</td></tr>
+
+<tr><td>wolf</td> <td>250</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>wood nymph</td> <td>300</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>Teleportitis: 30%</td></tr>
+
+<tr><td>woodchuck</td> <td>30</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>Woodland-elf</td> <td>350</td> <td>Elf</td> <td>&nbsp;</td> <td>Sleep: 27%</td></tr>
+
+<tr><td>wraith</td> <td>0</td> <td>&nbsp;</td> <td>Gain level</td> <td>&nbsp;</td></tr>
+
+<tr><td>wumpus</td> <td>500</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>xan</td> <td>300</td> <td>Poisonous</td> <td>&nbsp;</td> <td>Poison: 47%</td></tr>
+
+<tr><td>xorn</td> <td>700</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>yellow dragon</td> <td>1500</td> <td>Acidic</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+<tr><td>yellow mold</td>  <td>30   V!</td> <td>Poisonous</td> <td>Hallucination</td> <td>Poison: 7%</td></tr>
+
+<tr><td>yeti</td> <td>700</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>Cold: 33%</td></tr>
+
+<tr><td>zruty</td> <td>600</td> <td>&nbsp;</td> <td>&nbsp;</td> <td>&nbsp;</td></tr>
+
+</table>
+
+<P>Zombies and the like are not listed in this table, since technically a dwarf zombie doesn't leave a dwarf zombie corpse, it leaves an old dwarf corpse. Monsters that don't leave corpses at all are listed in a <a href="#TABLE2">separate table</a>.</P>
+
+<P>The "Nutrition" column shows how many nutrition points are gained from eating a corpse.<br>
+The nutrition points from a tin varies on the type of tin: see Dylan O'Donnell's <a href="http://www.steelypips.org/nethack/341/food-341.html">food</a> spoiler for more details.<br>
+Those monsters marked 'V' are suitable for vegetarians. Those marked '!' are suitable for vegans.<br>
+
+<h2> <a name="EFFECT">Effects of eating corpses</a></h2>
+
+<h3><a name="INITIAL">Initial effects:</a></h3>
+
+<p>
+The "Initial effects" column shows the effects that occur on the first bite of a corpse.
+</p>
+
+<p>Tinned food is eaten in one turn, so both initial and final effects (including intrinsic gains) happen on the same turn, the initial effects happening first.
+</p>
+
+<TABLE BORDER="1" cellspacing="1" cellpadding="3">    
+
+<tr><td>Acidic</td><td>Acidic corpses deal 1 to 15 damage to you if not acid-resistant. If turning to stone, you are cured.
+<br>Tins of acidic monsters deal no acid damage, but still stop you turning to stone.</td></tr>
+
+<tr><td>Poisonous</td><td>80% chance to deal 1 to 15 damage to you and reduce your strength by 1 to 4, if not poison-resistant.
+<br>Tins of monsters are not poisonous.</td></tr>
+
+<tr><td>Cannibalism<br>(Human, Dwarf, Elf, Gnome)</td><td>If you eat a member of your own race, and are not a Caveman, you gain aggravate monster and lose 2 to 5 luck.</td></tr>
+
+<tr><td>Aggravate</td><td>Eating this monster gives you aggravate monster. Orcs and Cavemen are exempt.</td></tr>
+
+<tr><td>Slime</td><td>Eating a green slime makes you begin turning into slime, killing you in 10 turns, unless you have unchanging or you are a green slime, a fire elemental, flaming sphere, fire vortex or salamander.</td></tr>
+
+<tr><td>Petrify</td><td>Eating a chickatrice, cockatrice or Medusa instantly petrifies you, unless stoning-resistant. If you are a golem, you become a stone golem, otherwise petrification kills you.</td></tr>
+
+<tr><td>DIE</td><td>Eating Death, Famine or Pestilence instantly kills you.</td></tr>
+
+<tr><td>Cure stoning</td><td>Eating lizard meat cures you if turning to stone.</td></tr>
+</table>
+
+<p>Eating meat (those monsters not marked 'V' in the "Nutrition" column) results in a -1 penalty to alignment, if you are a Monk.
+</p>
+
+<h3><a name="FINAL">Final effects:</a></h3>
+
+<p>
+The "Final effects" column shows the effects that occur after finishing a corpse.
+</p>
+
+<TABLE BORDER="1" cellspacing="1" cellpadding="3">    
+
+<tr><td>Stun</td><td>You become stunned for the number of turns shown.</td></tr>
+
+<tr><td>Polymorph</td><td>You change form, unless you have unchanging.</td></tr>
+
+<tr><td>Hallucination</td><td>You hallucinate for 200 (more) turns.</td></tr>
+
+<tr><td>Mimic</td><td>You mimic a pile of gold (or an orange if hallucinating) for the number of turns shown (falling off your steed, if applicable), unless you have unchanging.</td></tr>
+
+<tr><td>Reduce stunning, confusion</td><td>Eating a lizard reduces stunning and confusion counts to 2 turns, if higher.</td></tr>
+
+<tr><td>Strength</td><td>Eating a giant makes you gain strength, potentially as high as your racial maximum. (You can also gain an intrinsic at the same time, if appropriate.)<br>
+If you had less than 18 strength, then you have a 19/24 chance of gaining one point, or a 1/24 chance each of gaining 2 to 6 points.<br>
+If you had 18 strength or more, then you gain 1 to 10 points (equally likely).<br>
+If you had strength 18/85 or more, gain just one point, up to 18/**.</td></tr>
+
+<tr><td>Intelligence</td><td> Gain 1 intelligence.</td></tr>
+
+<tr><td>Gain level</td><td> Eating a wraith corpse makes you gain a level, unless the corpse rots away before you finish (which will happen, for instance, if you are interrupted while eating it).</td></tr>
+
+<tr><td>Energy</td><td>Eating a newt may give you 1 to 3 energy (100% chance if current energy is two-thirds or less of maximum energy). If this puts you above your maximum energy, you have a one-third chance to gain 1 maximum energy.</td></tr>
+
+<tr><td>Heal</td><td>Eating a nurse heals you to maximum hit points.</td></tr>
+</table>
+
+<h3><a name="INTRIN">Intrinsics:</a></h3>
+
+<p>
+The "Intrinsics" column shows the intrinsics that can be gained after finishing a corpse, with their probability of being conferred.</p>
+
+<TABLE BORDER="1" cellspacing="1" cellpadding="3">    
+
+<tr><td>Fire, Cold, Shock, Poison, Sleep, Disintegration</td><td>Gain the corresponding resistance, with the probability shown.</td></tr>
+
+<tr><td>Telepathy, Teleport Control, Teleportitis</td><td>Gain the corresponding intrinsic.</td></tr>
+
+<tr><td>Invisibility</td><td>If not already invisible, you become temporarily invisible, else you gain permanent invisibility and see invisible.</td></tr>
+
+<tr><td>Lycanthropy</td><td>You become a lycanthrope of the same kind as the corpse eaten.</td></tr>
+
+<tr><td>Speed toggle</td><td>If you have intrinsic speed, you lose it. If you don't have it, you gain it.</td></tr>
+</table>
+
+<P>The chances of receiving an intrinsic (e.g., poison: 33%) imply that
+eating the corpse has that chance of conferring the intrinsic (i.e.,
+corpses that can give multiple intrinsics have already had that accounted
+for). If you already have one of the possible intrinsics from a corpse,
+the others do not become more likely. You will never gain more than one
+intrinsic from a corpse.</p>
+
+<P>Tins of monsters confer intrinsics with the same probabilities as the corpses of the monster. Whether a corpse or tin is blessed or cursed has no effect on the chances.</P>
+
+For more information on the effects of intrinsics and the associated messages when gaining them, see Dylan O'Donnell's spoilers:<br>
+For the effects of fire, cold, shock, poison, sleep and disintegration resistance, see the
+<a href="http://www.steelypips.org/nethack/343/drgn-343.html">
+ dragon intrinsics</a> spoiler.<br>
+
+For the effects of teleportitis, teleport control, see invisible, invisibility, and aggravate monster, see the
+<a href="http://www.steelypips.org/nethack/343/rint-343.html">
+ ring intrinsics</a> spoiler.<br>
+
+For the effects of speed, telepathy and lycanthropy, see the
+<a href="http://www.steelypips.org/nethack/343/intr-343.html">
+ miscellaneous intrinsics</a> spoiler.<br>
+
+
+<P>
+<h3><a name="OLD">Old and tainted corpses, and food poisoning</a></h3>
+Corpses that have been left too long may give you food poisoning.
+<ul><li>Lizard and lichen corpses never rot.
+<li>Corpses left on ice age half as quickly, corpses in iceboxes do not age at all.
+<li>Corpses left by mummies, zombies and vampires are 100 turns old when they die. The corpse will be of the monster's base race (vampires are human).
+</ul>
+
+For corpses other than lizards and lichen, the possibility of getting food poisoning from a corpse is as follows:
+<ul><li>The age of the corpse is divided by a random number between 10 and 29, and rounded down.
+<li>Add 2 if the corpse is cursed, subtract 2 if blessed.
+<li>If the result is more than 5, and not an acid blob, it is tainted. The corpse disappears, conveying no nutrition or intrinsics. If you are not sickness-resistant, it gives you food poisoning. This will kill you in 11 to 20 turns if it is not cured.
+<li>Otherwise, if the result is more than 3, and you are not sickness-resistant, there is an 80% chance of the corpse being too old. You take 1 to 8 points of damage.
+</ul>
+
+<p>Food poisoning may be cured by:
+<ul><li>the spell "cure sickness"
+<li>a non-cursed potion of extra or full healing, or blessed potion of healing
+<li>using a non-cursed unicorn horn
+<li>eating a non-cursed eucalyptus leaf
+<li>praying for divine intervention
+<li>a potion of holy water (but not if chaotic or polymorphed into a demon or undead monster)
+<li>#invoking the Staff of Aesculapius
+<li>a nurse's healing "attack"
+<li>polymorphing into your own form, or a sickness-resistant monster (a ghoul or any F)
+</ul>
+</p>
+
+<!-- monsters below here leave no corpses -->
+<h2><a name="TABLE2">Monsters not leaving corpses </a></h2>
+<TABLE width=80% BORDER="1" cellspacing="1" cellpadding="3">
+<tr><td>
+air elemental</td> <td>
+Aleax</td> <td>
+Angel</td> <td>
+arch-lich</td> <td>
+Archon</td>
+</tr><tr><td>
+Ashikaga Takauji</td> <td>
+Asmodeus</td> <td>
+Baalzebub</td> <td>
+balrog</td> <td>
+barbed devil</td>
+</tr><tr><td>
+barrow wight</td> <td>
+black light</td> <td>
+bone devil</td> <td>
+clay golem</td> <td>
+couatl</td>
+</tr><tr><td>
+Dark One</td> <td>
+demilich</td> <td>
+Demogorgon</td> <td>
+Dispater</td> <td>
+djinni </td>
+</tr><tr><td>
+dust vortex</td> <td>
+earth elemental</td> <td>
+energy vortex</td> <td>
+erinys</td> <td>
+fire elemental</td>
+</tr><tr><td>
+fire vortex</td> <td>
+flaming sphere</td> <td>
+fog cloud</td> <td>
+freezing sphere</td> <td>
+gas spore</td>
+</tr><tr><td>
+Geryon</td> <td>
+ghost</td> <td>
+ghoul</td> <td>
+glass golem</td> <td>
+gold golem</td>
+</tr><tr><td>
+grid bug</td> <td>
+hezrou</td> <td>
+horned devil</td> <td>
+ice devil</td> <td>
+ice vortex</td>
+</tr><tr><td>
+incubus</td> <td>
+iron golem</td> <td>
+Juiblex</td> <td>
+ki-rin</td> <td>
+leather golem</td>
+</tr><tr><td>
+lemure</td> <td>
+lich</td> <td>
+mail daemon</td> <td>
+manes</td> <td>
+marilith</td>
+</tr><tr><td>
+master lich</td> <td>
+Minion of Huhetotl</td> <td>
+nalfeshnee</td> <td>
+Nalzok</td> <td>
+Nazgul</td>
+</tr><tr><td>
+Orcus</td> <td>
+paper golem</td> <td>
+pit fiend</td> <td>
+rope golem</td> <td>
+sandestin</td>
+</tr><tr><td>
+shade</td> <td>
+shocking sphere</td> <td>
+skeleton</td> <td>
+steam vortex</td> <td>
+stone golem</td>
+</tr><tr><td>
+straw golem</td> <td>
+succubus</td> <td>
+Thoth Amon</td> <td>
+Vlad the Impaler</td> <td>
+vrock</td>
+</tr><tr><td>
+water demon</td> <td>
+water elemental</td> <td>
+wood golem</td> <td>
+Yeenoghu</td> <td>
+yellow light</td>
+</tr></table>
+
+<h2>References</h2>
+<p>Original table of monsters and intrinsics by Catherine Darrow. (catherine[AT]tomandcatherine[DOT]com)<br>
+Dylan O'Donnell's spoilers on dragon, ring and miscellaneous intrinsics, and food.<br>
+Kate Nepveu's Demogorgon spoiler.</p> 
+
+Back to my <a href="nethack.htm">NetHack page</a>.
+</body>
+</html>

@@ -1,0 +1,298 @@
+Name,Nutrition,Initial effects,Final effects,Intrinsics
+abbot,400,Human,Hallucination,
+acid blob,10   V!,Acidic,,
+acolyte,400,Human,,
+aligned priest,400,Human,,
+ape,500,,,
+apprentice,400,Human,,
+Arch Priest,400,Human,,
+archeologist,400,Human,,
+attendant,400,Human,,
+baby black dragon,500,,,
+baby blue dragon,500,,,
+baby crocodile,200,,,
+baby gray dragon,500,,,
+baby green dragon,500,Poisonous,,
+baby long worm,250,,,
+baby orange dragon,500,,,
+baby purple worm,250,,,
+baby red dragon,500,,,
+baby silver dragon,500,,,
+baby white dragon,500,,,
+baby yellow dragon,500,Acidic,,
+baluchitherium,800,,,
+barbarian,400,Human,,
+Name,Nutrition,Initial effects,Final effects,Intrinsics
+bat,20,,Stun (30),
+black dragon,1500,,,Disintegration: 100%
+black naga,400,Acidic,,Poison: 53%
+black naga hatchling,100,Acidic,,Poison: 20%
+black pudding,250,Acidic,,"Cold: 22%, Shock: 22%, Poison: 22%"
+black unicorn,300,,,Poison: 27%
+blue dragon,1500,,,Shock: 100%
+blue jelly,20   V!,,,"Cold: 13%, Poison: 13%"
+brown mold,30   V!,,,"Cold: 3%, Poison: 3%"
+brown pudding,250 V,Acidic,,"Cold: 11%, Shock: 11%, Poison: 11%"
+bugbear,250,,,
+captain,400,Human,,
+carnivorous ape,550,,,
+cave spider,50,,,Poison: 7%
+caveman,400,Human,,
+cavewoman,400,Human,,
+centipede,50,,,Poison: 13%
+chameleon,100,,Polymorph,
+chickatrice,10,Petrify,,Poison: 27%
+chieftain,400,Human,,
+Chromatic Dragon,1700,Poisonous,,"Fire: 17%, Cold: 17%, Sleep: 17%, Shock: 17%, Poison: 17%, Disintegration: 17%"
+cobra,100,Poisonous,,Poison: 40%
+cockatrice,30,Petrify,,Poison: 33%
+Name,Nutrition,Initial effects,Final effects,Intrinsics
+coyote,250,,,
+crocodile,400,,,
+Croesus,400,Human,,
+Cyclops,700,,Strength,
+Death,1,DIE,,
+dingo,200,,,
+disenchanter,200,,,
+dog,200,Aggravate,,
+doppelganger,400,Human,Polymorph,
+dwarf,300,Dwarf,,
+dwarf king,300,Dwarf,,
+dwarf lord,300,Dwarf,,
+electric eel,250,,,Shock: 47%
+elf,350,Elf,,Sleep: 67%
+elf-lord,350,Elf,,Sleep: 53%
+Elvenking,350,Elf,,Sleep: 60%
+ettin,500,,,
+Famine,1,DIE,,
+fire ant,10,,,Fire: 20%
+fire giant,750,,Strength,Fire: 30%
+flesh golem,600,,,"Fire: 12%, Cold: 12%, Sleep: 12%, Shock: 12%, Poison: 12%"
+floating eye,10,,,Telepathy: 100%
+Name,Nutrition,Initial effects,Final effects,Intrinsics
+forest centaur,600,,,
+fox,250,,,
+frost giant,750,,Strength,Cold: 33%
+gargoyle,200,,,
+garter snake,60,,,
+gecko,20,,,
+gelatinous cube,150  V!,Acidic,,"Fire: 10%, Cold: 10%, Sleep: 10%, Shock: 10%"
+giant,750,,Strength,
+giant ant,10,,,
+giant bat,30,,Stun (60),
+giant beetle,10,Poisonous,,Poison: 33%
+giant eel,250,,,
+giant mimic,500,,Mimic (50),
+giant rat,30,,,
+giant spider,100,Poisonous,,Poison: 33%
+glass piercer,300,,,
+gnome,100,Gnome,,
+gnome king,150,Gnome,,
+gnome lord,120,Gnome,,
+gnomish wizard,120,Gnome,,
+goblin,100,,,
+golden naga,400,,,Poison: 67%
+Name,Nutrition,Initial effects,Final effects,Intrinsics
+golden naga hatchling,100,,,Poison: 20%
+Grand Master,400,Human,,
+gray dragon,1500,,,
+gray ooze,250 V,Acidic,,"Fire: 7%, Cold: 7%, Poison: 7%"
+gray unicorn,300,,,Poison: 27%
+green dragon,1500,Poisonous,,Poison: 100%
+green mold,30   V!,Acidic,,
+green slime,150 V,"Slime, Poisonous, Acidic",,
+Green-elf,350,Elf,,Sleep: 33%
+gremlin,20,Poisonous,,Poison: 33%
+Grey-elf,350,Elf,,Sleep: 40%
+guard,400,Human,,
+guardian naga,400,Poisonous,,Poison: 80%
+guardian naga hatchling,100,,,Poison: 20%
+guide,400,Human,,
+healer,400,Human,,
+hell hound,300,,,Fire: 80%
+hell hound pup,200,,,Fire: 47%
+high priest,400,Human,,
+hill giant,700,,Strength,
+hill orc,200,,,
+Name,Nutrition,Initial effects,Final effects,Intrinsics
+Hippocrates,400,Human,,
+hobbit,200,,,
+hobgoblin,200,,,
+homunculus,100,Poisonous,,"Sleep: 7%, Poison: 7%"
+horse,300,,,
+housecat,200,Aggravate,,
+human,400,Human,,
+hunter,400,Human,,
+ice troll,300,,,Cold: 60%
+iguana,30,,,
+imp,10,,,
+iron piercer,300,,,
+Ixoth,1600,,,Fire: 100%
+jabberwock,600,,,
+jackal,250,,,
+jaguar,300,,,
+jellyfish,20,Poisonous,,Poison: 20%
+Keystone Kop,200,Human,,
+killer bee,5,Poisonous,,Poison: 30%
+King Arthur,400,Human,,
+kitten,150,Aggravate,,
+knight,400,Human,,
+Name,Nutrition,Initial effects,Final effects,Intrinsics
+kobold,100,Poisonous,,
+kobold lord,200,Poisonous,,
+kobold shaman,150,Poisonous,,
+Kop Kaptain,200,Human,,
+Kop Lieutenant,200,Human,,
+Kop Sergeant,200,Human,,
+kraken,1000,,,
+large cat,250,Aggravate,,
+large dog,250,Aggravate,,
+large kobold,150,Poisonous,,
+large mimic,400,,Mimic (40),
+leocrotta,500,,,
+leprechaun,30,,,Teleportitis: 50%
+lichen,200  V!,,,
+lieutenant,400,Human,,
+little dog,150,Aggravate,,
+lizard,40,Cure stoning,"Reduce stunning, confusion",
+long worm,500,,,
+Lord Carnarvon,400,Human,,
+Lord Sato,400,Human,,
+Lord Surtur,850,,Strength,Fire: 50%
+Name,Nutrition,Initial effects,Final effects,Intrinsics
+lurker above,350,,,
+lynx,300,,,
+Master Assassin,400,Human,,
+Master Kaen,400,Human,,Poison: 100%
+master mind flayer,400,,Intelligence: 50%,Telepathy: (if no Intelligence gain)
+Master of Thieves,400,Human,,
+mastodon,800,,,
+Medusa,400,"Petrify, Poisonous",,Poison: 100%
+mind flayer,400,,Intelligence: 50%,Telepathy: (if no Intelligence gain)
+minotaur,700,,,
+monk,400,Human,,
+monkey,50,,,
+Mordor orc,200,,,
+mountain centaur,500,,,
+mountain nymph,300,,,Teleportitis: 30%
+mumak,500,,,
+neanderthal,400,Human,,
+Neferet the Green,400,Human,,
+newt,20,,Energy: 67%,
+ninja,400,Human,,
+Norn,400,Human,,
+nurse,400,Human,Heal,Poison: 73%
+Name,Nutrition,Initial effects,Final effects,Intrinsics
+ochre jelly,20   V!,Acidic,,
+ogre,500,,,
+ogre king,750,,,
+ogre lord,700,,,
+Olog-hai,400,,,
+Oracle,400,Human,,
+orange dragon,1500,,,Sleep: 100%
+orc,150,,,
+orc shaman,300,,,
+orc-captain,350,,,
+Orion,400,Human,,
+owlbear,700,,,
+page,400,Human,,
+panther,300,,,
+Pelias,400,Human,,
+Pestilence,1,DIE,,
+piranha,30,,,
+pit viper,60,Poisonous,,Poison: 40%
+plains centaur,500,,,
+pony,250,,,
+priest,400,Human,,
+priestess,400,Human,,
+prisoner,400,Human,,
+Name,Nutrition,Initial effects,Final effects,Intrinsics
+purple worm,700,,,
+pyrolisk,30,,,"Fire: 20%, Poison: 20%"
+python,100,,,
+quantum mechanic,20,Poisonous,,Speed Toggle
+quasit,200,,,Poison: 20%
+queen bee,5,Poisonous,,Poison: 60%
+quivering blob,100  V!,,,Poison: 33%
+rabid rat,5,Poisonous,,
+ranger,400,Human,,
+raven,20,,,
+red dragon,1500,,,Fire: 100%
+red mold,30   V!,,,"Fire: 3%, Poison: 3%"
+red naga,400,,,"Fire: 20%, Poison: 20%"
+red naga hatchling,100,,,"Fire: 10%, Poison: 10%"
+rock mole,30,,,
+rock piercer,200,,,
+rock troll,300,,,
+rogue,400,Human,,
+roshi,400,Human,,
+rothe,100,,,
+rust monster,250,,,
+salamander,400,Poisonous,,Fire: 53%
+samurai,400,Human,,
+Name,Nutrition,Initial effects,Final effects,Intrinsics
+sasquatch,750,,,
+scorpion,100,Poisonous,,Poison: 50%
+Scorpius,350,Poisonous,,Poison: 100%
+sergeant,400,Human,,
+sewer rat,12,,,
+Shaman Karnov,400,Human,,
+shark,350,,,
+shopkeeper,400,Human,,
+shrieker,100  V!,,,Poison: 20%
+silver dragon,1500,,,
+small mimic,200,,Mimic (20),
+snake,80,Poisonous,,Poison: 27%
+soldier,400,Human,,
+soldier ant,5,Poisonous,,Poison: 20%
+spotted jelly,20   V!,Acidic,,
+stalker,400,,Stun (60),Invisibility
+stone giant,750,,Strength,
+storm giant,750,,Strength,Shock: 50%
+student,400,Human,,
+tengu,200,,,"Poison: 13%, Teleportitis: 20%, Teleport control: 17%"
+thug,400,Human,,
+tiger,300,,,
+titan,900,,,
+titanothere,650,,,
+Name,Nutrition,Initial effects,Final effects,Intrinsics
+tourist,400,Human,,
+trapper,350,,,
+troll,350,,,
+Twoflower,400,Human,,
+umber hulk,500,,,
+Uruk-hai,300,,,
+valkyrie,400,Human,,
+vampire bat,20,Poisonous,,
+violet fungus,100  V!,,Hallucination,Poison: 20%
+warg,350,,,
+warhorse,350,,,
+warrior,400,Human,,
+watch captain,400,Human,,
+watchman,400,Human,,
+water moccasin,80,Poisonous,,Poison: 27%
+water nymph,300,,,Teleportitis: 30%
+water troll,350,,,
+werejackal,400,"Human, Poisonous",,Lycanthropy: 100%
+wererat,400,"Human, Poisonous",,Lycanthropy: 100%
+werewolf,400,"Human, Poisonous",,Lycanthropy: 100%
+white dragon,1500,,,Cold: 100%
+white unicorn,300,,,Poison: 27%
+Name,Nutrition,Initial effects,Final effects,Intrinsics
+winged gargoyle,300,,,
+winter wolf,300,,,Cold: 47%
+winter wolf cub,200,,,Cold: 33%
+wizard,400,Human,,
+Wizard of Yendor,400,Human,,"Fire: 25%, Poison: 25%, Teleportitis: 25%, Teleport control: 25%"
+wolf,250,,,
+wood nymph,300,,,Teleportitis: 30%
+woodchuck,30,,,
+Woodland-elf,350,Elf,,Sleep: 27%
+wraith,0,,Gain level,
+wumpus,500,,,
+xan,300,Poisonous,,Poison: 47%
+xorn,700,,,
+yellow dragon,1500,Acidic,,
+yellow mold,30   V!,Poisonous,Hallucination,Poison: 7%
+yeti,700,,,Cold: 33%
+zruty,600,,,
