@@ -15,6 +15,30 @@ def gettable(category):
     target_table = all_next_tables[1]
     return target_table
 
+def find_column_by_number(df_columns, number):
+    for col in df_columns:
+        col_str = str(col)
+        ranges = re.findall(r'\d+', col_str)
+
+        if not ranges:
+            continue
+
+        if len(ranges) == 1:
+            threshold = int(ranges[0])
+            if '<' in col_str:
+                if number < threshold:
+                    return col
+            elif '>' in col_str:
+                if number > threshold:
+                    return col
+        elif len(ranges) == 2:
+            low, high = int(ranges[0]), int(ranges[1])
+            if low <= number <= high:
+                return col
+
+    print("Значение харизмы не попадает в допустимый диапазон")
+    return None
+
 def main():
 
     options = ["Scrolls", "Potions"]
@@ -27,7 +51,11 @@ def main():
 
     clear_table = pd.read_html(str(target_table))[0]
 
-    print(clear_table.columns)
+    target_column = find_column_by_number(clear_table.columns, int(charisma))
+
+
+
+    print(target_column)
 
 if __name__ == "__main__":
     main()
