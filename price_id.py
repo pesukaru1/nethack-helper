@@ -2,6 +2,8 @@ from simple_term_menu import TerminalMenu
 from bs4 import BeautifulSoup
 import pandas as pd
 import re
+from collections import defaultdict
+
 
 
 
@@ -39,6 +41,14 @@ def find_column_by_number(df_columns, number):
     print("Значение харизмы не попадает в допустимый диапазон")
     return None
 
+def getresult(table, column, value):
+    df = table
+    mask = df[column].astype(str).str.contains(value)
+    result = df.loc[mask, df.columns[-1]]
+    return result
+
+
+
 def main():
 
     options = ["Scrolls", "Potions"]
@@ -53,9 +63,17 @@ def main():
 
     target_column = find_column_by_number(clear_table.columns, int(charisma))
 
+    price = input("Price: ")
+
+    id_results = getresult(clear_table, target_column, price)
+
+    pd.set_option('display.max_colwidth', None)
 
 
-    print(target_column)
+
+
+
+    print(id_results)
 
 if __name__ == "__main__":
     main()
