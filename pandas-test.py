@@ -1,5 +1,4 @@
-import pandas as pd
-
+w
 # 1. Читаем все таблицы из HTML-файла
 # Функция возвращает список ВСЕХ таблиц, найденных на странице
 tables = pd.read_html('price_id.html', displayed_only=True)
