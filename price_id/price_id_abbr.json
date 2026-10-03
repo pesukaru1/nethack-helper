@@ -1,0 +1,256 @@
+{
+ "scrolls": {
+  "identify": [
+   "id",
+   "ident",
+   "iden"
+  ],
+  "light": [
+   "li",
+   "light",
+   "lite"
+  ],
+  "blank paper": [
+   "bp",
+   "blank",
+   "bpap"
+  ],
+  "enchant weapon": [
+   "ew",
+   "enchw",
+   "enweap"
+  ],
+  "enchant armor": [
+   "ea",
+   "enchar",
+   "earm"
+  ],
+  "remove curse": [
+   "rc",
+   "remcur",
+   "rcur"
+  ],
+  "confuse monster": [
+   "comon",
+   "confmon",
+   "cfmon"
+  ],
+  "destroy armor": [
+   "darm",
+   "destarm",
+   "dstarm"
+  ],
+  "fire": [
+   "fire",
+   "fr",
+   "fir"
+  ],
+  "food detection": [
+   "fd",
+   "food",
+   "fdet"
+  ],
+  "gold detection": [
+   "gd",
+   "gold",
+   "gdet"
+  ],
+  "magic mapping": [
+   "mm",
+   "magmap",
+   "mmap"
+  ],
+  "scare monster": [
+   "scare",
+   "scar",
+   "scmon"
+  ],
+  "teleportation": [
+   "tp",
+   "tele",
+   "tport"
+  ],
+  "amnesia": [
+   "amn",
+   "amnes",
+   "amnesia"
+  ],
+  "create monster": [
+   "crmon",
+   "cremon",
+   "crtmon"
+  ],
+  "earth": [
+   "eart",
+   "earth",
+   "erth"
+  ],
+  "taming": [
+   "tam",
+   "taming",
+   "tame"
+  ],
+  "charging": [
+   "chrg",
+   "charg",
+   "chg"
+  ],
+  "genocide": [
+   "geno",
+   "genoc",
+   "gen"
+  ],
+  "punishment": [
+   "pun",
+   "punish",
+   "pnsh"
+  ],
+  "stinking cloud": [
+   "stink",
+   "stinkc",
+   "scloud"
+  ]
+ },
+ "potions": {
+  "water": [
+   "wt",
+   "water",
+   "wat"
+  ],
+  "holy water": [
+   "hw",
+   "holy",
+   "hly"
+  ],
+  "unholy water": [
+   "uw",
+   "unholy",
+   "unly"
+  ],
+  "booze": [
+   "booze",
+   "booz",
+   "bz"
+  ],
+  "fruit juice": [
+   "fj",
+   "fruitj",
+   "fju"
+  ],
+  "see invisible": [
+   "sinv",
+   "seeinv",
+   "si"
+  ],
+  "sickness": [
+   "sick",
+   "sickn",
+   "sk"
+  ],
+  "confusion": [
+   "conf",
+   "confus",
+   "cnf"
+  ],
+  "extra healing": [
+   "eheal",
+   "exh",
+   "xheal"
+  ],
+  "hallucination": [
+   "hallu",
+   "halluc",
+   "halu"
+  ],
+  "healing": [
+   "heal",
+   "healing",
+   "hl"
+  ],
+  "restore ability": [
+   "rest",
+   "restor",
+   "rst"
+  ],
+  "sleeping": [
+   "sleep",
+   "sleepin",
+   "slp"
+  ],
+  "blindness": [
+   "blind",
+   "blindn",
+   "bld"
+  ],
+  "gain energy": [
+   "ge",
+   "gainen",
+   "gegy"
+  ],
+  "invisibility": [
+   "inv",
+   "invis",
+   "invs"
+  ],
+  "monster detection": [
+   "md",
+   "mondet",
+   "mdet"
+  ],
+  "object detection": [
+   "od",
+   "objdet",
+   "odet"
+  ],
+  "enlightenment": [
+   "enl",
+   "enlight",
+   "elt"
+  ],
+  "full healing": [
+   "fheal",
+   "fullh",
+   "fhl"
+  ],
+  "levitation": [
+   "lev",
+   "levit",
+   "lvt"
+  ],
+  "polymorph": [
+   "poly",
+   "polym",
+   "ply"
+  ],
+  "speed": [
+   "spd",
+   "speed",
+   "sped"
+  ],
+  "acid": [
+   "acid",
+   "acd",
+   "aci"
+  ],
+  "oil": [
+   "oil",
+   "ol",
+   "oi"
+  ],
+  "gain ability": [
+   "ga",
+   "gainab",
+   "gab"
+  ],
+  "gain level": [
+   "gl",
+   "gainl",
+   "glv"
+  ],
+  "paralysis": [
+   "para",
+   "paral",
+   "prl"
+  ]
+ }
+}

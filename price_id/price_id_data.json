@@ -1,0 +1,1189 @@
+{
+ "format": "nethack-price-id",
+ "format_version": 1,
+ "generated_at": "2026-10-03 18:06:01",
+ "source": "price_id.html",
+ "source_note": "Цены NetHack 3.6.0 и позднее (продажа/покупка).",
+ "classes": {
+  "scrolls": {
+   "rows": [
+    {
+     "base": 20,
+     "buy": {
+      "le5": [
+       40,
+       53,
+       71
+      ],
+      "6-7": [
+       30,
+       40,
+       53
+      ],
+      "8-10": [
+       27,
+       36,
+       47
+      ],
+      "11-15": [
+       20,
+       27,
+       36
+      ],
+      "16-17": [
+       15,
+       20,
+       27
+      ],
+      "18": [
+       13,
+       18,
+       24
+      ],
+      "ge19": [
+       10,
+       13,
+       18
+      ]
+     },
+     "sell": [
+      10,
+      8
+     ],
+     "items": [
+      {
+       "name": "identify",
+       "note": ""
+      }
+     ]
+    },
+    {
+     "base": 50,
+     "buy": {
+      "le5": [
+       100,
+       133,
+       178
+      ],
+      "6-7": [
+       75,
+       100,
+       133
+      ],
+      "8-10": [
+       67,
+       89,
+       119
+      ],
+      "11-15": [
+       50,
+       67,
+       89
+      ],
+      "16-17": [
+       38,
+       50,
+       67
+      ],
+      "18": [
+       33,
+       44,
+       59
+      ],
+      "ge19": [
+       25,
+       33,
+       44
+      ]
+     },
+     "sell": [
+      25,
+      19
+     ],
+     "items": [
+      {
+       "name": "light",
+       "note": ""
+      }
+     ]
+    },
+    {
+     "base": 60,
+     "buy": {
+      "le5": [
+       120,
+       160,
+       213
+      ],
+      "6-7": [
+       90,
+       120,
+       160
+      ],
+      "8-10": [
+       80,
+       107,
+       142
+      ],
+      "11-15": [
+       60,
+       80,
+       107
+      ],
+      "16-17": [
+       45,
+       60,
+       80
+      ],
+      "18": [
+       40,
+       53,
+       71
+      ],
+      "ge19": [
+       30,
+       40,
+       53
+      ]
+     },
+     "sell": [
+      30,
+      23
+     ],
+     "items": [
+      {
+       "name": "blank paper",
+       "note": "unlabeled scroll"
+      },
+      {
+       "name": "enchant weapon",
+       "note": ""
+      }
+     ]
+    },
+    {
+     "base": 80,
+     "buy": {
+      "le5": [
+       160,
+       213,
+       284
+      ],
+      "6-7": [
+       120,
+       160,
+       213
+      ],
+      "8-10": [
+       107,
+       142,
+       190
+      ],
+      "11-15": [
+       80,
+       107,
+       142
+      ],
+      "16-17": [
+       60,
+       80,
+       107
+      ],
+      "18": [
+       53,
+       71,
+       95
+      ],
+      "ge19": [
+       40,
+       53,
+       71
+      ]
+     },
+     "sell": [
+      40,
+      30
+     ],
+     "items": [
+      {
+       "name": "enchant armor",
+       "note": ""
+      },
+      {
+       "name": "remove curse",
+       "note": ""
+      }
+     ]
+    },
+    {
+     "base": 100,
+     "buy": {
+      "le5": [
+       200,
+       267,
+       356
+      ],
+      "6-7": [
+       150,
+       200,
+       267
+      ],
+      "8-10": [
+       133,
+       178,
+       237
+      ],
+      "11-15": [
+       100,
+       133,
+       178
+      ],
+      "16-17": [
+       75,
+       100,
+       133
+      ],
+      "18": [
+       67,
+       89,
+       119
+      ],
+      "ge19": [
+       50,
+       67,
+       89
+      ]
+     },
+     "sell": [
+      50,
+      38
+     ],
+     "items": [
+      {
+       "name": "confuse monster",
+       "note": ""
+      },
+      {
+       "name": "destroy armor",
+       "note": ""
+      },
+      {
+       "name": "fire",
+       "note": ""
+      },
+      {
+       "name": "food detection",
+       "note": ""
+      },
+      {
+       "name": "gold detection",
+       "note": ""
+      },
+      {
+       "name": "magic mapping",
+       "note": ""
+      },
+      {
+       "name": "scare monster",
+       "note": ""
+      },
+      {
+       "name": "teleportation",
+       "note": ""
+      }
+     ]
+    },
+    {
+     "base": 200,
+     "buy": {
+      "le5": [
+       400,
+       533,
+       711
+      ],
+      "6-7": [
+       300,
+       400,
+       533
+      ],
+      "8-10": [
+       267,
+       356,
+       474
+      ],
+      "11-15": [
+       200,
+       267,
+       356
+      ],
+      "16-17": [
+       150,
+       200,
+       267
+      ],
+      "18": [
+       133,
+       178,
+       237
+      ],
+      "ge19": [
+       100,
+       133,
+       178
+      ]
+     },
+     "sell": [
+      100,
+      75
+     ],
+     "items": [
+      {
+       "name": "amnesia",
+       "note": ""
+      },
+      {
+       "name": "create monster",
+       "note": ""
+      },
+      {
+       "name": "earth",
+       "note": ""
+      },
+      {
+       "name": "taming",
+       "note": ""
+      }
+     ]
+    },
+    {
+     "base": 300,
+     "buy": {
+      "le5": [
+       600,
+       800,
+       1067
+      ],
+      "6-7": [
+       450,
+       600,
+       800
+      ],
+      "8-10": [
+       400,
+       533,
+       711
+      ],
+      "11-15": [
+       300,
+       400,
+       533
+      ],
+      "16-17": [
+       225,
+       300,
+       400
+      ],
+      "18": [
+       200,
+       267,
+       356
+      ],
+      "ge19": [
+       150,
+       200,
+       267
+      ]
+     },
+     "sell": [
+      150,
+      113
+     ],
+     "items": [
+      {
+       "name": "charging",
+       "note": ""
+      },
+      {
+       "name": "genocide",
+       "note": ""
+      },
+      {
+       "name": "punishment",
+       "note": ""
+      },
+      {
+       "name": "stinking cloud",
+       "note": ""
+      }
+     ]
+    }
+   ]
+  },
+  "potions": {
+   "rows": [
+    {
+     "base": 0,
+     "buy": {
+      "le5": [
+       10,
+       13,
+       18
+      ],
+      "6-7": [
+       8,
+       10,
+       13
+      ],
+      "8-10": [
+       7,
+       9,
+       12
+      ],
+      "11-15": [
+       5,
+       7,
+       9
+      ],
+      "16-17": [
+       4,
+       5,
+       7
+      ],
+      "18": [
+       3,
+       4,
+       6
+      ],
+      "ge19": [
+       3,
+       3,
+       4
+      ]
+     },
+     "sell": [
+      0,
+      0
+     ],
+     "items": [
+      {
+       "name": "water",
+       "note": "uncursed"
+      }
+     ]
+    },
+    {
+     "base": 50,
+     "buy": {
+      "le5": [
+       100,
+       133,
+       178
+      ],
+      "6-7": [
+       75,
+       100,
+       133
+      ],
+      "8-10": [
+       67,
+       89,
+       119
+      ],
+      "11-15": [
+       50,
+       67,
+       89
+      ],
+      "16-17": [
+       38,
+       50,
+       67
+      ],
+      "18": [
+       33,
+       44,
+       59
+      ],
+      "ge19": [
+       25,
+       33,
+       44
+      ]
+     },
+     "sell": [
+      25,
+      19
+     ],
+     "items": [
+      {
+       "name": "booze",
+       "note": ""
+      },
+      {
+       "name": "fruit juice",
+       "note": ""
+      },
+      {
+       "name": "see invisible",
+       "note": ""
+      },
+      {
+       "name": "sickness",
+       "note": ""
+      }
+     ]
+    },
+    {
+     "base": 100,
+     "buy": {
+      "le5": [
+       200,
+       267,
+       356
+      ],
+      "6-7": [
+       150,
+       200,
+       267
+      ],
+      "8-10": [
+       133,
+       178,
+       237
+      ],
+      "11-15": [
+       100,
+       133,
+       178
+      ],
+      "16-17": [
+       75,
+       100,
+       133
+      ],
+      "18": [
+       67,
+       89,
+       119
+      ],
+      "ge19": [
+       50,
+       67,
+       89
+      ]
+     },
+     "sell": [
+      50,
+      38
+     ],
+     "items": [
+      {
+       "name": "confusion",
+       "note": ""
+      },
+      {
+       "name": "extra healing",
+       "note": ""
+      },
+      {
+       "name": "hallucination",
+       "note": ""
+      },
+      {
+       "name": "healing",
+       "note": ""
+      },
+      {
+       "name": "holy water",
+       "note": "blessed clear potion"
+      },
+      {
+       "name": "unholy water",
+       "note": "cursed clear potion"
+      },
+      {
+       "name": "restore ability",
+       "note": ""
+      },
+      {
+       "name": "sleeping",
+       "note": ""
+      }
+     ]
+    },
+    {
+     "base": 150,
+     "buy": {
+      "le5": [
+       300,
+       400,
+       533
+      ],
+      "6-7": [
+       225,
+       300,
+       400
+      ],
+      "8-10": [
+       200,
+       267,
+       356
+      ],
+      "11-15": [
+       150,
+       200,
+       267
+      ],
+      "16-17": [
+       113,
+       150,
+       200
+      ],
+      "18": [
+       100,
+       133,
+       178
+      ],
+      "ge19": [
+       75,
+       100,
+       133
+      ]
+     },
+     "sell": [
+      75,
+      56
+     ],
+     "items": [
+      {
+       "name": "blindness",
+       "note": ""
+      },
+      {
+       "name": "gain energy",
+       "note": ""
+      },
+      {
+       "name": "invisibility",
+       "note": ""
+      },
+      {
+       "name": "monster detection",
+       "note": ""
+      },
+      {
+       "name": "object detection",
+       "note": ""
+      }
+     ]
+    },
+    {
+     "base": 200,
+     "buy": {
+      "le5": [
+       400,
+       533,
+       711
+      ],
+      "6-7": [
+       300,
+       400,
+       533
+      ],
+      "8-10": [
+       267,
+       356,
+       474
+      ],
+      "11-15": [
+       200,
+       267,
+       356
+      ],
+      "16-17": [
+       150,
+       200,
+       267
+      ],
+      "18": [
+       133,
+       178,
+       237
+      ],
+      "ge19": [
+       100,
+       133,
+       178
+      ]
+     },
+     "sell": [
+      100,
+      75
+     ],
+     "items": [
+      {
+       "name": "enlightenment",
+       "note": ""
+      },
+      {
+       "name": "full healing",
+       "note": ""
+      },
+      {
+       "name": "levitation",
+       "note": ""
+      },
+      {
+       "name": "polymorph",
+       "note": ""
+      },
+      {
+       "name": "speed",
+       "note": ""
+      }
+     ]
+    },
+    {
+     "base": 250,
+     "buy": {
+      "le5": [
+       500,
+       667,
+       889
+      ],
+      "6-7": [
+       375,
+       500,
+       667
+      ],
+      "8-10": [
+       333,
+       444,
+       593
+      ],
+      "11-15": [
+       250,
+       333,
+       444
+      ],
+      "16-17": [
+       188,
+       250,
+       333
+      ],
+      "18": [
+       167,
+       222,
+       296
+      ],
+      "ge19": [
+       125,
+       167,
+       222
+      ]
+     },
+     "sell": [
+      125,
+      94
+     ],
+     "items": [
+      {
+       "name": "acid",
+       "note": ""
+      },
+      {
+       "name": "oil",
+       "note": ""
+      }
+     ]
+    },
+    {
+     "base": 300,
+     "buy": {
+      "le5": [
+       600,
+       800,
+       1067
+      ],
+      "6-7": [
+       450,
+       600,
+       800
+      ],
+      "8-10": [
+       400,
+       533,
+       711
+      ],
+      "11-15": [
+       300,
+       400,
+       533
+      ],
+      "16-17": [
+       225,
+       300,
+       400
+      ],
+      "18": [
+       200,
+       267,
+       356
+      ],
+      "ge19": [
+       150,
+       200,
+       267
+      ]
+     },
+     "sell": [
+      150,
+      113
+     ],
+     "items": [
+      {
+       "name": "gain ability",
+       "note": ""
+      },
+      {
+       "name": "gain level",
+       "note": ""
+      },
+      {
+       "name": "paralysis",
+       "note": ""
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "labels": {
+  "scrolls": [
+   "ZELGO MER",
+   "JUYED AWK YACC",
+   "NR 9",
+   "XIXAXA XOXAXA XUXAXA",
+   "PRATYAVAYAH",
+   "DAIYEN FOOELS",
+   "LEP GEX VEN ZEA",
+   "PRIRUTSENIE",
+   "ELBIB YLOH",
+   "VERR YED HORRE",
+   "VENZAR BORGAVVE",
+   "THARR",
+   "YUM YUM",
+   "KERNOD WEL",
+   "ELAM EBOW",
+   "DUAM XNAHT",
+   "ANDOVA BEGARIN",
+   "KIRJE",
+   "VE FORBRYDERNE",
+   "HACKEM MUCHE",
+   "VELOX NEB",
+   "FOOBIE BLETCH",
+   "TEMOV",
+   "GARVEN DEH",
+   "READ ME",
+   "ETAOIN SHRDLU",
+   "LOREM IPSUM",
+   "FNORD",
+   "KO BATE",
+   "ABRA KA DABRA",
+   "ASHPD SODALG",
+   "ZLORFIK",
+   "GNIK SISI VLE",
+   "HAPAX LEGOMENON",
+   "EIRIS SAZUN IDISI",
+   "PHOL ENDE WODAN",
+   "GHOTI",
+   "MAPIRO MAHAMA DIROMAT",
+   "VAS CORP BET MANI",
+   "XOR OTA",
+   "STRC PRST SKRZ KRK"
+  ],
+  "potions": [
+   "ruby",
+   "pink",
+   "orange",
+   "yellow",
+   "emerald",
+   "dark green",
+   "cyan",
+   "sky blue",
+   "brilliant blue",
+   "magenta",
+   "purple-red",
+   "puce",
+   "milky",
+   "swirly",
+   "bubbly",
+   "smoky",
+   "cloudy",
+   "effervescent",
+   "black",
+   "golden",
+   "brown",
+   "fizzy",
+   "dark",
+   "white",
+   "murky"
+  ]
+ },
+ "abbr_defaults": {
+  "scrolls": {
+   "identify": [
+    "id",
+    "ident",
+    "iden"
+   ],
+   "light": [
+    "li",
+    "light",
+    "lite"
+   ],
+   "blank paper": [
+    "bp",
+    "blank",
+    "bpap"
+   ],
+   "enchant weapon": [
+    "ew",
+    "enchw",
+    "enweap"
+   ],
+   "enchant armor": [
+    "ea",
+    "enchar",
+    "earm"
+   ],
+   "remove curse": [
+    "rc",
+    "remcur",
+    "rcur"
+   ],
+   "confuse monster": [
+    "comon",
+    "confmon",
+    "cfmon"
+   ],
+   "destroy armor": [
+    "darm",
+    "destarm",
+    "dstarm"
+   ],
+   "fire": [
+    "fire",
+    "fr",
+    "fir"
+   ],
+   "food detection": [
+    "fd",
+    "food",
+    "fdet"
+   ],
+   "gold detection": [
+    "gd",
+    "gold",
+    "gdet"
+   ],
+   "magic mapping": [
+    "mm",
+    "magmap",
+    "mmap"
+   ],
+   "scare monster": [
+    "scare",
+    "scar",
+    "scmon"
+   ],
+   "teleportation": [
+    "tp",
+    "tele",
+    "tport"
+   ],
+   "amnesia": [
+    "amn",
+    "amnes",
+    "amnesia"
+   ],
+   "create monster": [
+    "crmon",
+    "cremon",
+    "crtmon"
+   ],
+   "earth": [
+    "eart",
+    "earth",
+    "erth"
+   ],
+   "taming": [
+    "tam",
+    "taming",
+    "tame"
+   ],
+   "charging": [
+    "chrg",
+    "charg",
+    "chg"
+   ],
+   "genocide": [
+    "geno",
+    "genoc",
+    "gen"
+   ],
+   "punishment": [
+    "pun",
+    "punish",
+    "pnsh"
+   ],
+   "stinking cloud": [
+    "stink",
+    "stinkc",
+    "scloud"
+   ]
+  },
+  "potions": {
+   "water": [
+    "wt",
+    "water",
+    "wat"
+   ],
+   "holy water": [
+    "hw",
+    "holy",
+    "hly"
+   ],
+   "unholy water": [
+    "uw",
+    "unholy",
+    "unly"
+   ],
+   "booze": [
+    "booze",
+    "booz",
+    "bz"
+   ],
+   "fruit juice": [
+    "fj",
+    "fruitj",
+    "fju"
+   ],
+   "see invisible": [
+    "sinv",
+    "seeinv",
+    "si"
+   ],
+   "sickness": [
+    "sick",
+    "sickn",
+    "sk"
+   ],
+   "confusion": [
+    "conf",
+    "confus",
+    "cnf"
+   ],
+   "extra healing": [
+    "eheal",
+    "exh",
+    "xheal"
+   ],
+   "hallucination": [
+    "hallu",
+    "halluc",
+    "halu"
+   ],
+   "healing": [
+    "heal",
+    "healing",
+    "hl"
+   ],
+   "restore ability": [
+    "rest",
+    "restor",
+    "rst"
+   ],
+   "sleeping": [
+    "sleep",
+    "sleepin",
+    "slp"
+   ],
+   "blindness": [
+    "blind",
+    "blindn",
+    "bld"
+   ],
+   "gain energy": [
+    "ge",
+    "gainen",
+    "gegy"
+   ],
+   "invisibility": [
+    "inv",
+    "invis",
+    "invs"
+   ],
+   "monster detection": [
+    "md",
+    "mondet",
+    "mdet"
+   ],
+   "object detection": [
+    "od",
+    "objdet",
+    "odet"
+   ],
+   "enlightenment": [
+    "enl",
+    "enlight",
+    "elt"
+   ],
+   "full healing": [
+    "fheal",
+    "fullh",
+    "fhl"
+   ],
+   "levitation": [
+    "lev",
+    "levit",
+    "lvt"
+   ],
+   "polymorph": [
+    "poly",
+    "polym",
+    "ply"
+   ],
+   "speed": [
+    "spd",
+    "speed",
+    "sped"
+   ],
+   "acid": [
+    "acid",
+    "acd",
+    "aci"
+   ],
+   "oil": [
+    "oil",
+    "ol",
+    "oi"
+   ],
+   "gain ability": [
+    "ga",
+    "gainab",
+    "gab"
+   ],
+   "gain level": [
+    "gl",
+    "gainl",
+    "glv"
+   ],
+   "paralysis": [
+    "para",
+    "paral",
+    "prl"
+   ]
+  }
+ }
+}

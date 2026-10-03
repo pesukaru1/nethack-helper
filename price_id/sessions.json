@@ -1,0 +1,16 @@
+{
+ "format": "nethack-price-id-sessions",
+ "format_version": 1,
+ "last": "honor_yeno",
+ "sessions": {
+  "honor_yeno": {
+   "dir": "honor_yeno",
+   "hero": "yeno",
+   "role": "",
+   "cha": 10,
+   "extra": {},
+   "items": [],
+   "created": "2026-10-03 18:19"
+  }
+ }
+}
